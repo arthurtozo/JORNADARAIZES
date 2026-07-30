@@ -1,0 +1,85 @@
+/* ==========================================================================
+   RAÍZES — Design Tokens
+   Identidade visual: "raízes e videira" (João 15) — verde-mata profundo,
+   ouro suave como luz, fundo branco, tipografia orgânica na exibição e
+   humanista no corpo. Nada infantil, nada corporativo genérico.
+   ========================================================================== */
+
+:root {
+  /* ---- Cor: paleta nomeada (5 cores + neutros) -------------------------- */
+  --color-bg:            #FFFFFF;   /* fundo — branco puro, muito respiro */
+  --color-surface:       #F4F8F5;   /* verde-sálvia quase imperceptível — cards */
+  --color-surface-2:     #EAF1EC;   /* variação um pouco mais forte, hover */
+  --color-ink:           #12201A;   /* texto principal — verde-preto, não preto puro */
+  --color-ink-soft:      #4A5C52;   /* texto secundário */
+  --color-root:          #1B4332;   /* verde-mata profundo — cor de marca / raiz */
+  --color-root-light:    #2D6A4F;   /* verde de acento em hover/estados */
+  --color-gold:          #B8892B;   /* ouro fosco — "luz", destaque raro */
+  --color-gold-soft:     #F3E7CC;   /* fundo suave para caixas de destaque douradas */
+  --color-clay:          #9C4A32;   /* terracota queimada — alerta/tensão (Encontro 4) usado com moderação */
+  --color-line:          #DCE6DF;   /* linhas divisórias, bordas */
+  --color-line-strong:   #B9CCC0;
+
+  /* ---- Tipografia --------------------------------------------------------
+     Display: "Fraunces" — serifa orgânica, com variação de peso que lembra
+     veios de madeira/raízes — usada com moderação em títulos.
+     Corpo: "Inter" — humanista, extremamente legível em telas, neutra.
+     Utilitária: "IBM Plex Mono" — referências bíblicas, rótulos, metadados.
+  -------------------------------------------------------------------------- */
+  --font-display: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  --font-body:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono:    'IBM Plex Mono', 'SFMono-Regular', Menlo, monospace;
+
+  --fs-display-xl: clamp(2.75rem, 6vw, 5rem);
+  --fs-display-l:  clamp(2rem, 4vw, 3.25rem);
+  --fs-display-m:  clamp(1.5rem, 2.6vw, 2.25rem);
+  --fs-title:      1.375rem;
+  --fs-body-l:     1.15rem;
+  --fs-body:       1rem;
+  --fs-small:      0.875rem;
+  --fs-caption:    0.75rem;
+
+  --lh-tight: 1.15;
+  --lh-normal: 1.5;
+  --lh-relaxed: 1.75;
+
+  /* ---- Espaçamento (escala 4px) ------------------------------------------ */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 7rem;
+
+  /* ---- Raio / sombra ------------------------------------------------------ */
+  --radius-s: 10px;
+  --radius-m: 18px;
+  --radius-l: 28px;
+  --radius-pill: 999px;
+
+  --shadow-s: 0 1px 2px rgba(18, 32, 26, 0.06);
+  --shadow-m: 0 8px 24px rgba(18, 32, 26, 0.08);
+  --shadow-l: 0 24px 60px rgba(18, 32, 26, 0.12);
+
+  /* ---- Movimento ----------------------------------------------------------- */
+  --ease-organic: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 160ms;
+  --dur-med: 360ms;
+  --dur-slow: 720ms;
+
+  /* ---- Container ------------------------------------------------------------ */
+  --content-width: 780px;
+  --content-width-wide: 1120px;
+  --sidebar-width: 300px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast: 0ms;
+    --dur-med: 0ms;
+    --dur-slow: 0ms;
+  }
+}
