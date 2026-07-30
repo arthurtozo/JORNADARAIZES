@@ -1,0 +1,41 @@
+<svg viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="videiraTitle">
+  <title id="videiraTitle">Ilustração de uma videira com raízes profundas, baseada em João 15</title>
+  <defs>
+    <linearGradient id="trunkGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2D6A4F"/>
+      <stop offset="100%" stop-color="#1B4332"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Tronco central -->
+  <path d="M240 40 C238 120 242 180 240 240" stroke="url(#trunkGrad)" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+  <!-- Ramos (frutos = folhas douradas) -->
+  <g stroke="#2D6A4F" stroke-width="4" fill="none" stroke-linecap="round">
+    <path d="M240 90 C200 80 170 60 150 40"/>
+    <path d="M240 110 C282 96 310 74 328 52"/>
+    <path d="M240 150 C196 148 158 160 130 150"/>
+    <path d="M240 170 C286 172 320 190 344 182"/>
+    <path d="M240 200 C204 210 176 232 158 232"/>
+  </g>
+  <g fill="#B8892B">
+    <circle cx="150" cy="40" r="7"/>
+    <circle cx="328" cy="52" r="7"/>
+    <circle cx="130" cy="150" r="7"/>
+    <circle cx="344" cy="182" r="7"/>
+    <circle cx="158" cy="232" r="7"/>
+  </g>
+
+  <!-- Raízes profundas (espelho do ramo, mais escuras e ramificadas) -->
+  <g stroke="#1B4332" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.85">
+    <path d="M240 240 C220 270 210 300 190 320"/>
+    <path d="M190 320 C176 336 160 344 148 362"/>
+    <path d="M240 240 C260 268 272 296 292 314"/>
+    <path d="M292 314 C306 330 322 338 336 356"/>
+    <path d="M240 240 C240 276 240 310 240 344"/>
+    <path d="M240 344 C238 366 232 384 240 404"/>
+  </g>
+
+  <!-- Linha do solo -->
+  <line x1="70" y1="240" x2="410" y2="240" stroke="#DCE6DF" stroke-width="2"/>
+</svg>

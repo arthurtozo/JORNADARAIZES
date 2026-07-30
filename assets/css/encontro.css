@@ -1,0 +1,151 @@
+/* ==========================================================================
+   RAÍZES — Estilos de Encontro
+   Componentes pastorais (quebra-gelo, história, contexto, leitura, dinâmica,
+   oração, desafio) + Modo Apresentação, pensado para leitura em projetor/TV:
+   fontes maiores, largura de linha reduzida, mais contraste, sidebar oculta.
+   ========================================================================== */
+
+.meeting-header { margin-bottom: var(--space-7); }
+.meeting-header .badge { margin-bottom: var(--space-3); }
+
+.meeting-toolbar {
+  position: sticky; top: 0; z-index: 20;
+  display: flex; justify-content: flex-end; gap: var(--space-2);
+  padding: var(--space-3) 0; margin-bottom: var(--space-2);
+  background: linear-gradient(var(--color-bg) 70%, transparent);
+}
+.icon-btn {
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--color-line-strong);
+  background: #fff; color: var(--color-ink-soft);
+  font-size: var(--fs-small); font-weight: 600;
+}
+.icon-btn:hover { background: var(--color-surface); color: var(--color-root); }
+.icon-btn[aria-pressed="true"] { background: var(--color-root); color: #fff; border-color: var(--color-root); }
+
+/* ---- Bloco de seção padrão (introdução, contexto, leitura...) ------------ */
+.section-block { margin: var(--space-8) 0; }
+.section-block .eyebrow { margin-bottom: var(--space-3); }
+.section-block h2 { font-size: var(--fs-display-m); }
+
+/* ---- Quebra-gelo ----------------------------------------------------------- */
+.icebreaker {
+  background: var(--color-gold-soft);
+  border-radius: var(--radius-l);
+  padding: var(--space-6);
+}
+.icebreaker h4 { font-family: var(--font-mono); text-transform: uppercase; font-size: var(--fs-caption); letter-spacing: .06em; color: var(--color-gold); margin-bottom: var(--space-3); }
+
+/* ---- História / ilustração ------------------------------------------------ */
+.story {
+  border-left: 3px solid var(--color-line-strong);
+  padding-left: var(--space-5);
+  font-size: var(--fs-body-l);
+  color: var(--color-ink-soft);
+  line-height: var(--lh-relaxed);
+}
+
+/* ---- Contexto bíblico (histórico/cultural) -------------------------------- */
+.context-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-5);
+}
+@media (max-width: 700px) { .context-grid { grid-template-columns: 1fr; } }
+.context-card { background: var(--color-surface); border-radius: var(--radius-m); padding: var(--space-5); }
+.context-card h4 { font-size: var(--fs-small); color: var(--color-root-light); margin-bottom: var(--space-2); text-transform: uppercase; letter-spacing: .04em; font-family: var(--font-mono); }
+
+/* ---- Explicação verso por verso ------------------------------------------- */
+.verse-by-verse { display: grid; gap: var(--space-5); }
+.verse-item { display: grid; grid-template-columns: 90px 1fr; gap: var(--space-4); align-items: start; }
+@media (max-width: 640px) { .verse-item { grid-template-columns: 1fr; } }
+.verse-item .verse-ref {
+  font-family: var(--font-mono); font-size: var(--fs-small); color: var(--color-gold);
+  font-weight: 600; padding-top: var(--space-1);
+}
+.verse-item .verse-text { font-family: var(--font-display); font-style: italic; color: var(--color-root); margin-bottom: var(--space-2); }
+.verse-item .verse-explain { color: var(--color-ink); }
+
+/* ---- Dinâmica --------------------------------------------------------------- */
+.dynamic-card {
+  background: #fff; border: 1.5px solid var(--color-line); border-radius: var(--radius-l);
+  padding: var(--space-6);
+}
+.dynamic-card .badge { margin-bottom: var(--space-3); }
+.dynamic-steps { padding-left: 1.2em; }
+.dynamic-steps li { margin-bottom: var(--space-2); }
+
+/* ---- Perguntas de discussão -------------------------------------------------- */
+.discussion-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-5); }
+.discussion-list li { padding-bottom: var(--space-5); border-bottom: 1px solid var(--color-line); }
+.discussion-list li:last-child { border-bottom: none; }
+.discussion-list p.question { font-weight: 600; color: var(--color-root); margin-bottom: var(--space-3); }
+.discussion-list textarea {
+  width: 100%; min-height: 72px; border: 1px solid var(--color-line-strong);
+  border-radius: var(--radius-s); padding: var(--space-3) var(--space-4);
+  font-family: var(--font-body); font-size: var(--fs-body); resize: vertical;
+}
+
+/* ---- Oração ------------------------------------------------------------------- */
+.prayer-block {
+  background: var(--color-root); color: #fff;
+  border-radius: var(--radius-l); padding: var(--space-6);
+}
+.prayer-block h4 { font-family: var(--font-mono); text-transform: uppercase; font-size: var(--fs-caption); letter-spacing: .06em; color: var(--color-gold-soft); margin-bottom: var(--space-3); }
+.prayer-block p { color: rgba(255,255,255,0.92); }
+.prayer-block textarea {
+  width: 100%; min-height: 90px; border: none; border-radius: var(--radius-s);
+  padding: var(--space-3) var(--space-4); font-family: var(--font-body); background: rgba(255,255,255,0.12); color: #fff;
+}
+.prayer-block textarea::placeholder { color: rgba(255,255,255,0.6); }
+
+/* ---- Desafio da semana ---------------------------------------------------------- */
+.challenge-card {
+  border: 1.5px dashed var(--color-gold); border-radius: var(--radius-l);
+  padding: var(--space-6); background: #fff;
+}
+
+/* ---- Versículo para memorizar ---------------------------------------------------- */
+.memorize-card {
+  text-align: center; padding: var(--space-8) var(--space-6);
+  background: var(--color-surface); border-radius: var(--radius-l);
+}
+.memorize-card .verse { border: none; padding: 0; font-size: var(--fs-display-m); }
+.memorize-card cite { margin-top: var(--space-4); }
+
+/* ---- Fim do encontro / navegação entre encontros ------------------------------- */
+.meeting-footer-nav {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-top: var(--space-9); padding-top: var(--space-6); border-top: 1px solid var(--color-line);
+}
+
+/* ==========================================================================
+   MODO APRESENTAÇÃO
+   Ativado via body.presentation-mode (assets/js/apresentacao.js).
+   Objetivo: legibilidade a distância em projetor/TV — texto maior, coluna
+   mais estreita, mais contraste, sem distrações de navegação.
+   ========================================================================== */
+body.presentation-mode {
+  --fs-body: 1.35rem;
+  --fs-body-l: 1.6rem;
+  --fs-small: 1.05rem;
+  --fs-caption: 0.95rem;
+  --fs-title: 1.9rem;
+  --fs-display-m: clamp(2.25rem, 4vw, 3.25rem);
+  --fs-display-l: clamp(2.75rem, 5vw, 4rem);
+  line-height: 1.65;
+}
+body.presentation-mode .app-shell { grid-template-columns: 1fr; }
+body.presentation-mode .sidebar { display: none; }
+body.presentation-mode .main-scroll { padding: var(--space-7) var(--space-6); }
+body.presentation-mode .container {
+  max-width: 900px;
+}
+body.presentation-mode .reflect-box textarea,
+body.presentation-mode .discussion-list textarea,
+body.presentation-mode .prayer-block textarea {
+  display: none; /* em apresentação não faz sentido mostrar campos de escrita individuais */
+}
+body.presentation-mode .meeting-toolbar { justify-content: center; }
+body.presentation-mode .scaffold-note,
+body.presentation-mode .meeting-footer-nav { display: none; }
