@@ -9,16 +9,19 @@
 <link rel="stylesheet" href="assets/css/base.css">
 <link rel="stylesheet" href="assets/css/slides.css">
 </head>
-<body class="is-deck">
+<body class="is-deck" data-encontro-atual="encontro-03">
 
   <header class="deck-header">
     <span class="meeting-tag">Encontro 3 de 7 · Que história você já está escrevendo?</span>
     <div class="deck-dots" data-dots></div>
     <div class="deck-controls">
+      <button data-menu-toggle title="Menu de encontros">☰</button>
       <button data-fullscreen title="Tela cheia">⤢</button>
       <a href="index.html" title="Voltar ao início"><button>✕</button></a>
     </div>
   </header>
+
+  <nav class="deck-menu-panel" data-menu-panel data-no-advance></nav>
 
   <main class="deck" data-deck>
 
@@ -155,7 +158,9 @@
   <button class="deck-nav-arrow deck-nav-arrow--prev" data-prev title="Voltar">←</button>
   <button class="deck-nav-arrow deck-nav-arrow--next" data-next title="Avançar">→</button>
 
+  <script src="assets/js/encontros-data.js"></script>
   <script src="assets/js/progresso.js"></script>
+  <script src="assets/js/menu.js"></script>
   <script src="assets/js/deck.js"></script>
   <script>
     document.getElementById("btnConcluir").addEventListener("click", () => {
