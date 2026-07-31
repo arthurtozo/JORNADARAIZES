@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Material do Líder — Jornada RAÍZES</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<style>
+  .leader-header {
+    background: var(--color-root); color: #fff;
+    padding: var(--space-8) var(--space-5) var(--space-7);
+    text-align: center;
+  }
+  .leader-header .eyebrow { color: var(--color-gold-soft); justify-content: center; display: flex; }
+  .leader-header h1 { color: #fff; margin-top: var(--space-3); }
+  .leader-header p { color: rgba(255,255,255,0.85); max-width: 640px; margin: 0 auto; }
+
+  .quicknav {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(255,255,255,0.94); backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--color-line);
+    padding: var(--space-3) var(--space-5);
+    display: flex; gap: var(--space-2); flex-wrap: wrap; justify-content: center;
+  }
+  .quicknav a {
+    font-family: var(--font-mono); font-size: var(--fs-caption);
+    padding: var(--space-2) var(--space-3); border-radius: var(--radius-pill);
+    background: var(--color-surface); color: var(--color-ink-soft);
+  }
+  .quicknav a:hover { background: var(--color-surface-2); color: var(--color-root); }
+
+  .leader-section { padding: var(--space-8) 0; border-bottom: 1px solid var(--color-line); }
+  .leader-section:nth-child(odd) { background: var(--color-surface); }
+  .leader-section .container { max-width: var(--content-width-wide); }
+
+  .leader-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-6);
+    margin-top: var(--space-6);
+  }
+  @media (max-width: 800px) { .leader-grid { grid-template-columns: 1fr; } }
+
+  .leader-card h4 {
+    font-family: var(--font-mono); text-transform: uppercase; letter-spacing: .05em;
+    font-size: var(--fs-caption); color: var(--color-root-light); margin-bottom: var(--space-3);
+  }
+  .qa-item { margin-bottom: var(--space-5); }
+  .qa-item .q { font-weight: 600; color: var(--color-root); margin-bottom: var(--space-2); }
+  .qa-item .a { color: var(--color-ink); margin: 0; }
+
+  .care-note {
+    background: var(--color-gold-soft); border-left: 3px solid var(--color-gold);
+    border-radius: var(--radius-m); padding: var(--space-5); margin-top: var(--space-6);
+  }
+  .care-note h4 { color: var(--color-gold); font-family: var(--font-mono); text-transform: uppercase; font-size: var(--fs-caption); margin-bottom: var(--space-2); letter-spacing: .05em; }
+
+  .time-breakdown { list-style: none; padding: 0; margin: var(--space-4) 0 0; display: grid; gap: var(--space-2); }
+  .time-breakdown li { display: flex; justify-content: space-between; font-size: var(--fs-small); padding: var(--space-2) 0; border-bottom: 1px dashed var(--color-line); }
+  .time-breakdown li span:last-child { color: var(--color-ink-soft); font-family: var(--font-mono); }
+
+  .back-to-top { position: fixed; bottom: var(--space-5); right: var(--space-5); }
+</style>
+</head>
+<body>
+
+  <header class="leader-header">
+    <span class="eyebrow">Material do líder</span>
+    <h1>Conduzindo a Jornada RAÍZES</h1>
+    <p>Este material não substitui os slides — ele te dá o que fica por trás deles: objetivos, respostas para perguntas difíceis, cuidado pastoral e dicas de condução para cada um dos 7 encontros.</p>
+  </header>
+
+  <nav class="quicknav">
+    <a href="#geral">Princípios gerais</a>
+    <a href="#e1">Encontro 1</a>
+    <a href="#e2">Encontro 2</a>
+    <a href="#e3">Encontro 3</a>
+    <a href="#e4">Encontro 4</a>
+    <a href="#e5">Encontro 5</a>
+    <a href="#e6">Encontro 6</a>
+    <a href="#e7">Encontro 7</a>
+  </nav>
+
+  <main>
+
+    <!-- ================= PRINCÍPIOS GERAIS ================= -->
+    <section class="leader-section" id="geral">
+      <div class="container">
+        <span class="badge">Antes de começar</span>
+        <h2>Como conduzir esta jornada</h2>
+        <div class="leader-grid">
+          <div class="leader-card card">
+            <h4>O que essa jornada é</h4>
+            <p>Uma transição — não uma troca de sala. Esses adolescentes estão saindo de uma fase em que a fé foi, em boa parte, herdada dos pais e líderes, e entrando numa fase em que precisam assumir a própria caminhada com Cristo. Cada encontro é um capítulo da mesma história: comece sempre reconectando com o que foi dito no encontro anterior antes de abrir um novo.</p>
+          </div>
+          <div class="leader-card card">
+            <h4>Como usar os slides</h4>
+            <p>Os slides foram feitos pra serem projetados, com um clique revelando uma ideia por vez. Não leia os slides — use-os como apoio visual enquanto você conduz com suas próprias palavras, storytelling e silêncio. As perguntas de "Vamos conversar" mostram só os ícones (💬⏳👥) de propósito: você conduz a conversa verbalmente, sem forçar todo mundo a responder em voz alta.</p>
+          </div>
+          <div class="leader-card card">
+            <h4>O ritmo emocional</h4>
+            <p>Cada encontro segue: Pergunta → História → Palavra → Explicação → Aplicação → Conversa → Desafio → Oração. Não pule a pergunta de abertura pra "ir direto ao ponto" — ela existe pra despertar curiosidade antes de qualquer explicação. Se o grupo estiver quieto na pergunta de abertura, dê 10-15 segundos de silêncio antes de seguir; não preencha o silêncio por eles.</p>
+          </div>
+          <div class="leader-card card">
+            <h4>Terminando com decisão, não informação</h4>
+            <p>O slide final de cada encontro (fundo verde) é o mais importante — é onde a informação vira decisão. Não pule direto pro "até semana que vem". Dê um instante de silêncio depois de ler esse slide antes de fechar em oração.</p>
+          </div>
+        </div>
+        <div class="care-note">
+          <h4>Cuidado pastoral geral</h4>
+          <p>Os Encontros 4 e 6 tocam em pecado, luta pessoal e vida secreta — temas que podem gerar vergonha se conduzidos sem cuidado. Nunca peça confissões públicas. Deixe claro, nesses dois encontros, que você está disponível para conversas individuais depois, e proteja a privacidade de quem se abrir com você.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ENCONTRO 1 ================= -->
+    <section class="leader-section" id="e1">
+      <div class="container">
+        <span class="badge">Encontro 1 de 7</span>
+        <h2>Quem é Jesus, pra você?</h2>
+        <ul class="time-breakdown">
+          <li><span>Pergunta + quebra-gelo</span><span>8 min</span></li>
+          <li><span>História + Palavra + explicação</span><span>12 min</span></li>
+          <li><span>Aplicação + conversa</span><span>10 min</span></li>
+          <li><span>Desafio + oração</span><span>5 min</span></li>
+        </ul>
+        <div class="leader-grid">
+          <div class="leader-card card">
+            <h4>Objetivo</h4>
+            <p>Levar cada adolescente a perceber a diferença entre uma fé herdada da família e uma fé decidida por conta própria — sem fazer ninguém se sentir culpado por ainda estar nesse processo. O objetivo não é uma "decisão de fé" performática no encontro; é plantar a pergunta.</p>
+            <h4 style="margin-top:var(--space-5)">Versículos complementares</h4>
+            <p>João 1:12-13 (o direito de se tornar filho de Deus é dado a quem crê, não herdado por nascimento); Josué 24:15 ("escolhei hoje a quem sirvais").</p>
+          </div>
+          <div class="leader-card card">
+            <h4>Perguntas difíceis e respostas</h4>
+            <div class="qa-item">
+              <p class="q">"E se eu nunca tive certeza se acredito mesmo?"</p>
+              <p class="a">Normalize: dúvida não é o oposto de fé, é parte do processo de torná-la sua. Convide a pessoa a continuar a jornada com essa pergunta em aberto, sem pressioná-la a fingir certeza.</p>
+            </div>
+            <div class="qa-item">
+              <p class="q">"Meus pais me obrigam a vir. Isso conta como minha fé?"</p>
+              <p class="a">Seja honesto: não, ainda não — e não tem problema nenhum nisso ser o ponto de partida. O convite do encontro é exatamente começar a virar isso, aos poucos, ao longo da jornada.</p>
+            </div>
+          </div>
+        </div>
+        <div class="care-note">
+          <h4>Possíveis dificuldades dos adolescentes</h4>
+          <p>Alguns podem sentir que estão sendo "testados" sobre se sua fé é real. Deixe claro, antes da pergunta de abertura, que ninguém vai ser exposto ou julgado pela resposta — essa é uma pergunta para pensar, não para provar nada a ninguém no grupo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ENCONTRO 2 ================= -->
+    <section class="leader-section" id="e2">
+      <div class="container">
+        <span class="badge">Encontro 2 de 7</span>
+        <h2>Como continuar o que você começou?</h2>
+        <ul class="time-breakdown">
+          <li><span>Reconexão + pergunta + quebra-gelo</span><span>8 min</span></li>
+          <li><span>História + Palavra + explicação</span><span>12 min</span></li>
+          <li><span>Aplicação + conversa</span><span>10 min</span></li>
+          <li><span>Desafio + oração</span><span>5 min</span></li>
+        </ul>
+        <div class="leader-grid">
+          <div class="leader-card card">
+            <h4>Objetivo</h4>
+            <p>Substituir a ideia de que vida espiritual depende de "sentir Deus" pela ideia de hábito constante. O ponto central é o desafio da semana (escolher um horário fixo) — reserve tempo real pra isso, não corra.</p>
+            <h4 style="margin-top:var(--space-5)">Versículos complementares</h4>
+            <p>Salmo 1:1-3 (a árvore plantada junto a ribeiros de águas); Lucas 5:16 (Jesus se retirava para orar, mesmo sendo o Filho de Deus).</p>
+          </div>
+          <div class="leader-card card">
+            <h4>Perguntas difíceis e respostas</h4>
+            <div class="qa-item">
+              <p class="q">"Eu tento orar e não sinto nada. Isso significa que não está funcionando?"</p>
+              <p class="a">Não. Sentimento não é o termômetro da presença de Deus — constância é. Compare com exercício físico: os primeiros dias raramente "parecem" estar funcionando, mas o corpo está mudando mesmo assim.</p>
+            </div>
+          </div>
+        </div>
+        <div class="care-note">
+          <h4>Dica de condução</h4>
+          <p>Na dinâmica "meu horário de raiz", ande entre as duplas e ajude quem escolher um horário irreal ("vou acordar 1h mais cedo todo dia") a escolher algo pequeno e sustentável.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ENCONTRO 3 ================= -->
+    <section class="leader-section" id="e3">
+      <div class="container">
+        <span class="badge">Encontro 3 de 7</span>
+        <h2>Que história você já está escrevendo?</h2>
+        <ul class="time-breakdown">
+          <li><span>Reconexão + pergunta + quebra-gelo</span><span>8 min</span></li>
+          <li><span>História + Palavra + explicação</span><span>10 min</span></li>
+          <li><span>Conversa + dinâmica</span><span>12 min</span></li>
+          <li><span>Desafio + oração</span><span>5 min</span></li>
+        </ul>
+        <div class="leader-grid">
+          <div class="leader-card card">
+            <h4>Objetivo</h4>
+            <p>Tirar o testemunho cristão do campo de "algo pra depois" e mostrar que ele já está sendo formado agora. Cuidado para não soar como pressão de perfeição — o tom é de convite, não de cobrança.</p>
+            <h4 style="margin-top:var(--space-5)">Versículos complementares</h4>
+            <p>Mateus 5:14-16 ("vocês são a luz do mundo"); Filipenses 1:6 (Deus completa a boa obra que começou).</p>
+          </div>
+          <div class="leader-card card">
+            <h4>Perguntas difíceis e respostas</h4>
+            <div class="qa-item">
+              <p class="q">"E se meu testemunho hoje for ruim? Já estraguei tudo?"</p>
+              <p class="a">Não. Testemunho não é um placar fixo — é uma trajetória. O que importa não é o histórico, é a direção de agora em diante. Aponte para Filipenses 1:6.</p>
+            </div>
+          </div>
+        </div>
+        <div class="care-note">
+          <h4>Cuidado pastoral</h4>
+          <p>A dinâmica "manchete de jornal" pode expor inseguranças de autoimagem. Não force ninguém a compartilhar em voz alta — deixe explicitamente opcional.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ENCONTRO 4 ================= -->
+    <section class="leader-section" id="e4">
+      <div class="container">
+        <span class="badge">Encontro 4 de 7</span>
+        <h2>Por que eu caio na mesma coisa de novo?</h2>
+        <ul class="time-breakdown">
+          <li><span>Reconexão + pergunta + quebra-gelo</span><span>8 min</span></li>
+          <li><span>História + Palavra + explicação</span><span>12 min</span></li>
+          <li><span>Aplicação + conversa</span><span>10 min</span></li>
+          <li><span>Desafio + oração</span><span>5 min</span></li>
+        </ul>
+        <div class="leader-grid">
+          <div class="leader-card card">
+            <h4>Objetivo</h4>
+            <p>Este é o encontro mais sensível da jornada. O objetivo é honestidade sem vergonha: mostrar que a luta contra o pecado é normal (até Paulo a descreve), e que a saída é dependência de Jesus, não força de vontade.</p>
+            <h4 style="margin-top:var(--space-5)">Versículos complementares</h4>
+            <p>1 João 1:9 (confissão e perdão); Salmo 51 (arrependimento de Davi); 1 Coríntios 10:13 (Deus não permite tentação maior do que se pode suportar).</p>
+          </div>
+          <div class="leader-card card">
+            <h4>Perguntas difíceis e respostas</h4>
+            <div class="qa-item">
+              <p class="q">"Já pedi perdão tantas vezes pela mesma coisa que acho que Deus está cansado de mim."</p>
+              <p class="a">Isso não é o que a Bíblia ensina sobre Deus. 1 João 1:9 não tem limite de vezes. A vergonha de "já pedi demais" é uma mentira que afasta da graça, não uma verdade espiritual.</p>
+            </div>
+          </div>
+        </div>
+        <div class="care-note">
+          <h4>Cuidado pastoral — leia com atenção</h4>
+          <p>Nunca peça confissões específicas em público. Na dinâmica sigilosa, reforce verbalmente que ninguém vai ler ou pedir para ver o que foi escrito. Se um adolescente procurar você depois do encontro para falar sobre uma luta específica (inclusive temas mais pesados, como comportamentos compulsivos ou autolesão), acolha com calma, sem choque na expressão, e direcione para apoio adequado (pais, conselheiro, profissional) além do acompanhamento espiritual — você não precisa (nem deve) resolver tudo sozinho como líder.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ENCONTRO 5 ================= -->
+    <section class="leader-section" id="e5">
+      <div class="container">
+        <span class="badge">Encontro 5 de 7</span>
+        <h2>Quem está esculpindo você, aos poucos?</h2>
+        <ul class="time-breakdown">
+          <li><span>Reconexão + pergunta + quebra-gelo</span><span>8 min</span></li>
+          <li><span>História + Palavra + explicação</span><span>10 min</span></li>
+          <li><span>Conversa + dinâmica</span><span>12 min</span></li>
+          <li><span>Desafio + oração</span><span>5 min</span></li>
+        </ul>
+        <div class="leader-grid">
+          <div class="leader-card card">
+            <h4>Objetivo</h4>
+            <p>Trazer consciência sobre influência digital sem soar como discurso genérico de "celular é ruim". O ponto não é o aparelho, é a intencionalidade sobre o que se consome.</p>
+            <h4 style="margin-top:var(--space-5)">Versículos complementares</h4>
+            <p>Filipenses 4:8 (pensar no que é verdadeiro, nobre, puro); Tiago 1:14-15 (o processo da tentação até o pecado).</p>
+          </div>
+          <div class="leader-card card">
+            <h4>Perguntas difíceis e respostas</h4>
+            <div class="qa-item">
+              <p class="q">"Todo mundo usa rede social assim. Sou eu que sou exagerado(a) se me preocupar?"</p>
+              <p class="a">Normalidade estatística não é o mesmo que saúde espiritual. A pergunta não é "todo mundo faz", é "isso está me aproximando ou afastando de quem eu quero ser em Cristo".</p>
+            </div>
+          </div>
+        </div>
+        <div class="care-note">
+          <h4>Dica de condução</h4>
+          <p>No quebra-gelo do tempo de tela, se perceber que alguém ficou visivelmente constrangido com o número, não destaque a pessoa — siga a conversa no nível do grupo, não do indivíduo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ENCONTRO 6 ================= -->
+    <section class="leader-section" id="e6">
+      <div class="container">
+        <span class="badge">Encontro 6 de 7</span>
+        <h2>Quem é você quando ninguém está olhando?</h2>
+        <ul class="time-breakdown">
+          <li><span>Reconexão + pergunta + quebra-gelo</span><span>8 min</span></li>
+          <li><span>História + Palavra + explicação</span><span>12 min</span></li>
+          <li><span>Aplicação + conversa</span><span>10 min</span></li>
+          <li><span>Desafio + oração</span><span>5 min</span></li>
+        </ul>
+        <div class="leader-grid">
+          <div class="leader-card card">
+            <h4>Objetivo</h4>
+            <p>Aprofundar o tema da integridade sem transformá-lo em vigilância ansiosa ("Deus está me observando pra me pegar"). O tom certo é: Deus vê e, mesmo assim, ama — não Deus vê e por isso tenha medo.</p>
+            <h4 style="margin-top:var(--space-5)">Versículos complementares</h4>
+            <p>Salmo 139:1-4 (Deus conhece completamente e ainda assim está perto); Provérbios 10:9 (quem anda em integridade anda seguro).</p>
+          </div>
+          <div class="leader-card card">
+            <h4>Perguntas difíceis e respostas</h4>
+            <div class="qa-item">
+              <p class="q">"Se Deus já sabe tudo que vou fazer, por que devo me esforçar pra ser íntegro?"</p>
+              <p class="a">Não é sobre esconder de Deus (impossível) — é sobre não viver dividido entre quem você é em público e em particular, porque essa divisão cansa e machuca, mesmo sem ninguém saber.</p>
+            </div>
+          </div>
+        </div>
+        <div class="care-note">
+          <h4>Cuidado pastoral</h4>
+          <p>Assim como no Encontro 4, este toca em vida secreta. Reforce que Deus vendo tudo é motivo de conforto ("Ele já sabe e ama assim mesmo"), não de vergonha adicional. Fique disponível para conversas individuais depois.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ENCONTRO 7 ================= -->
+    <section class="leader-section" id="e7">
+      <div class="container">
+        <span class="badge">Encontro 7 de 7</span>
+        <h2>Sua fé chegou até aqui. Pra onde ela vai agora?</h2>
+        <ul class="time-breakdown">
+          <li><span>Reconexão + pergunta + quebra-gelo</span><span>10 min</span></li>
+          <li><span>História + Palavra + explicação</span><span>10 min</span></li>
+          <li><span>Conversa + dinâmica</span><span>12 min</span></li>
+          <li><span>Desafio + oração de encerramento</span><span>8 min</span></li>
+        </ul>
+        <div class="leader-grid">
+          <div class="leader-card card">
+            <h4>Objetivo</h4>
+            <p>Fechar a jornada apontando pra fora — mostrar que discipulado não é um destino individual, é uma corrente. Este é o encontro mais emocional da jornada; reserve um tempo extra pro fechamento, sem pressa.</p>
+            <h4 style="margin-top:var(--space-5)">Versículos complementares</h4>
+            <p>2 Timóteo 2:2 (passar adiante o que foi aprendido); João 13:34-35 (o amor como marca dos discípulos).</p>
+          </div>
+          <div class="leader-card card">
+            <h4>Sugestão de encerramento</h4>
+            <p>Considere fazer, ao final deste encontro, uma menção pessoal a cada adolescente — uma frase curta sobre o que você percebeu de crescimento nele(a) ao longo da jornada. Isso ancora emocionalmente a virada de "fé herdada" para "fé pessoal" de um jeito que nenhum slide consegue.</p>
+          </div>
+        </div>
+        <div class="care-note">
+          <h4>Conectando com o Projeto Final</h4>
+          <p>Aproveite o fechamento deste encontro para já apresentar o Projeto Final ("Minha Jornada com Cristo") e o cronograma da apresentação de cada adolescente — o gancho fica mais forte enquanto a emoção do encerramento ainda está presente.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <a href="#geral" class="btn btn-primary back-to-top">↑ Topo</a>
+
+</body>
+</html>
