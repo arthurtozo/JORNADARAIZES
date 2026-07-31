@@ -1,0 +1,146 @@
+/* ==========================================================================
+   RAÍZES — Slides
+   Layout de apresentação (estilo Keynote): uma ideia por tela, centralizada
+   horizontal e verticalmente, tipografia grande, legível a distância.
+   ========================================================================== */
+
+html, body.is-deck {
+  height: 100%;
+  overflow: hidden;
+  background: var(--color-bg);
+}
+
+.deck {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  cursor: pointer;
+}
+
+/* ---- Cabeçalho fixo: título curto, dots de progresso, controles -------- */
+.deck-header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 30;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: var(--space-4) var(--space-6);
+  cursor: default;
+}
+.deck-header .meeting-tag {
+  font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: .06em;
+  color: var(--color-ink-soft); text-transform: uppercase;
+}
+.deck-dots { display: flex; gap: 6px; align-items: center; }
+.deck-dots .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--color-line-strong); transition: background var(--dur-fast), transform var(--dur-fast); }
+.deck-dots .dot.is-current { background: var(--color-root); transform: scale(1.4); }
+.deck-controls { display: flex; gap: var(--space-2); }
+.deck-controls button {
+  border: none; background: var(--color-surface); color: var(--color-ink-soft);
+  width: 38px; height: 38px; border-radius: 50%; font-size: 1rem;
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.deck-controls button:hover { background: var(--color-surface-2); color: var(--color-root); }
+
+/* ---- Slide individual ---------------------------------------------------- */
+.slide {
+  position: absolute; inset: 0;
+  display: none;
+  flex-direction: column; align-items: center; justify-content: center;
+  text-align: center;
+  padding: 12vh 9vw 14vh;
+}
+.slide.is-active {
+  display: flex;
+  animation: slideRise 620ms var(--ease-organic) both;
+}
+@keyframes slideRise {
+  from { opacity: 0; transform: translateY(22px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .slide.is-active { animation: none; }
+}
+
+/* ---- Rótulo da etapa emocional (PERGUNTA / HISTÓRIA / PALAVRA...) ------ */
+.slide-kicker {
+  font-family: var(--font-mono); text-transform: uppercase; letter-spacing: .14em;
+  font-size: clamp(0.9rem, 1.3vw, 1.1rem); color: var(--color-gold);
+  margin-bottom: var(--space-6);
+}
+
+/* ---- Tipografia dos slides ------------------------------------------------ */
+.slide h1 {
+  font-size: clamp(3rem, 6.2vw, 4.75rem);
+  color: var(--color-root); margin: 0 0 var(--space-5);
+}
+.slide h2 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: var(--color-root); margin: 0 0 var(--space-5);
+}
+.slide p {
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  line-height: 1.4; color: var(--color-ink);
+  max-width: 980px; margin: 0 0 var(--space-4);
+}
+.slide p.lede-slide {
+  font-size: clamp(1.5rem, 2.2vw, 1.9rem);
+  color: var(--color-ink-soft);
+}
+.slide .verse-slide {
+  font-family: var(--font-display); font-style: italic; color: var(--color-root);
+  font-size: clamp(2.1rem, 3.6vw, 3.1rem); line-height: 1.45; max-width: 1000px;
+  border: none; padding: 0;
+}
+.slide .verse-slide cite {
+  display: block; margin-top: var(--space-6);
+  font-family: var(--font-mono); font-style: normal;
+  font-size: clamp(1.1rem, 1.6vw, 1.4rem); color: var(--color-ink-soft);
+}
+
+/* ---- Slide de referência de versículo pequena, junto da explicação ------ */
+.slide .verse-ref-tag {
+  display: inline-block; font-family: var(--font-mono); color: var(--color-gold);
+  font-size: clamp(1.1rem, 1.6vw, 1.4rem); margin-bottom: var(--space-5);
+  font-weight: 600;
+}
+
+/* ---- Slide de conversa (ícones, sem caixa de escrita) -------------------- */
+.talk-meta {
+  display: flex; gap: var(--space-6); justify-content: center; flex-wrap: wrap;
+  margin-top: var(--space-7);
+  font-size: clamp(1.2rem, 1.8vw, 1.6rem); color: var(--color-ink-soft);
+  font-family: var(--font-mono);
+}
+.talk-meta span { display: inline-flex; align-items: center; gap: var(--space-2); }
+
+/* ---- Slide de título de abertura de encontro ----------------------------- */
+.slide--opener h1 { font-size: clamp(3.5rem, 8vw, 6rem); }
+.slide--opener .meeting-index {
+  font-family: var(--font-mono); color: var(--color-ink-soft);
+  font-size: clamp(1rem, 1.6vw, 1.3rem); margin-bottom: var(--space-6);
+  letter-spacing: .1em; text-transform: uppercase;
+}
+
+/* ---- Slide de encerramento / decisão -------------------------------------- */
+.slide--decision { background: var(--color-root); }
+.slide--decision h1, .slide--decision .slide-kicker { color: #fff; }
+.slide--decision p { color: rgba(255,255,255,0.92); }
+.slide--decision .verse-slide { color: var(--color-gold-soft); }
+
+/* ---- Botão dentro de slide (ex: concluir encontro / avançar) ------------- */
+.slide .btn { margin-top: var(--space-7); font-size: 1.15rem; }
+
+/* ---- Setas de navegação nos cantos (opcional, complementa clique/teclado) */
+.deck-nav-arrow {
+  position: fixed; bottom: var(--space-6); z-index: 30;
+  border: none; background: var(--color-surface); color: var(--color-ink-soft);
+  width: 46px; height: 46px; border-radius: 50%; font-size: 1.2rem;
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.deck-nav-arrow:hover { background: var(--color-surface-2); color: var(--color-root); }
+.deck-nav-arrow--prev { left: var(--space-6); }
+.deck-nav-arrow--next { right: var(--space-6); }
+
+@media (max-width: 700px) {
+  .slide { padding: 14vh 7vw 16vh; }
+  .deck-nav-arrow { width: 40px; height: 40px; }
+  .talk-meta { flex-direction: column; gap: var(--space-3); }
+}

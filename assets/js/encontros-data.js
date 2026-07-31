@@ -1,56 +1,51 @@
-/**
- * RAÍZES — Fonte única de dados dos encontros.
- * Usado pela sidebar, pela timeline da landing page e pelo cálculo de progresso.
- * Mantém tudo isso num único lugar evita duplicar a lista em cada página.
- */
 const ENCONTROS = [
   {
     id: 1,
     slug: "encontro-01",
-    titulo: "Quem é Jesus para mim?",
-    resumo: "Fé herdada não salva — cada pessoa precisa decidir seguir Jesus.",
+    titulo: "Quem é Jesus, pra você?",
+    resumo: "Fé herdada não salva. Aqui começa a decisão de conhecer Jesus por conta própria.",
     base: "João 15 · Mateus 16",
   },
   {
     id: 2,
     slug: "encontro-02",
-    titulo: "Como criar raízes em Cristo?",
-    resumo: "Oração, Bíblia, comunhão e constância — relacionamento não depende de emoção.",
+    titulo: "Como continuar o que você começou?",
+    resumo: "Raiz não cresce de emoção. Cresce de constância — oração, Bíblia, comunhão.",
     base: "João 15",
   },
   {
     id: 3,
     slug: "encontro-03",
-    titulo: "Qual testemunho eu quero ser?",
-    resumo: "Você já está escrevendo sua história. Como quer ser lembrado daqui a dez anos?",
+    titulo: "Que história você já está escrevendo?",
+    resumo: "Você não espera pra ter um testemunho. Você já é um, hoje.",
     base: "1 Timóteo 4:12",
   },
   {
     id: 4,
     slug: "encontro-04",
-    titulo: "Como vencer a batalha da carne?",
+    titulo: "Por que eu caio na mesma coisa de novo?",
     resumo: "Ninguém acorda longe de Deus — nos afastamos aos poucos. E voltamos aos poucos também.",
     base: "Gálatas 5 · Romanos 7",
   },
   {
     id: 5,
     slug: "encontro-05",
-    titulo: "Quem está moldando meu coração?",
-    resumo: "Redes sociais, algoritmos e amizades — como proteger a mente.",
+    titulo: "Quem está esculpindo você, aos poucos?",
+    resumo: "Redes sociais, algoritmos e amizades — o que está moldando seu coração.",
     base: "Provérbios 4:23 · Romanos 12:2",
   },
   {
     id: 6,
     slug: "encontro-06",
-    titulo: "Vivendo a fé quando ninguém está olhando",
-    resumo: "Integridade, vida secreta e um Deus que vê o coração.",
+    titulo: "Quem é você quando ninguém está olhando?",
+    resumo: "Integridade, vida secreta e um Deus que já vê o coração.",
     base: "1 Samuel 16:7 · Mateus 6",
   },
   {
     id: 7,
     slug: "encontro-07",
-    titulo: "Chamados para fazer discípulos",
-    resumo: "Adolescentes também têm chamado: evangelismo, amor e serviço.",
+    titulo: "Sua fé chegou até aqui. Pra onde ela vai agora?",
+    resumo: "O capítulo final não termina em você — termina em quem você vai discipular.",
     base: "Mateus 28:18-20",
   },
 ];
