@@ -1,0 +1,310 @@
+/**
+ * RAÍZES — Dados dos Cadernos (PDF)
+ * Conteúdo devocional completo por encontro, mais denso que os slides —
+ * é o material que o adolescente leva pra casa e usa durante a semana.
+ * Usado exclusivamente por gerar-pdf.js.
+ */
+const CADERNOS = {
+
+  1: {
+    titulo: "Quem é Jesus, pra você?",
+    versiculoChave: { texto: "Tu és o Cristo, o Filho do Deus vivo.", ref: "Mateus 16:16" },
+    objetivo: "Levar você a perceber a diferença entre uma fé herdada da família e uma fé decidida por você mesmo — e a dar o primeiro passo rumo a essa decisão pessoal.",
+    resumo: "Jesus perguntou aos discípulos quem o povo dizia que Ele era — e depois mudou a pergunta para \"e vocês?\". Essa mesma pergunta chega até você agora: sua fé até hoje pode ter sido, em boa parte, a fé dos seus pais. Este é o começo da jornada de torná-la sua.",
+    estudo: [
+      { titulo: "Contexto histórico", texto: "Mateus 16 acontece em Cesareia de Filipe, uma cidade a mais de 40 km ao norte da Galileia, aos pés do Monte Hermon — uma região conhecida pela adoração a Baal e ao deus grego Pã, com um grande santuário de pedra dedicado a ele." },
+      { titulo: "Contexto cultural", texto: "Não é acaso Jesus escolher justamente esse lugar, cercado de templos pagãos, para perguntar quem os discípulos diziam que Ele era. É como fazer essa pergunta hoje no meio de um shopping cheio de vitrines competindo pela sua atenção." },
+      { titulo: "Explicação", texto: "Antes de perguntar aos discípulos, Jesus perguntou o que \"o povo\" dizia (v.13-14) — João Batista, Elias, um profeta. Depois muda para \"e vocês\" (v.15): de opinião pública para resposta pessoal. Pedro responde com convicção (v.16); Jesus revela depois que foi o Pai quem mostrou isso a ele — conhecer Jesus de verdade não vem só da tradição de família, vem de Deus, a quem busca de coração aberto." },
+    ],
+    curiosidade: "O rochedo de Cesareia de Filipe, de onde jorrava água associada ao \"portão dos infernos\" na mitologia da época, ficava a poucos metros de onde Jesus disse a Pedro: \"sobre esta pedra edificarei a minha igreja\" — uma declaração de vitória bem no território que representava o oposto dela.",
+    aplicacoes: [
+      "Sua fé até hoje pode ter sido, em boa parte, a fé dos seus pais — e isso é um bom começo, mas não pode ser o fim da história.",
+      "Conhecer Jesus de verdade é diferente de saber sobre Ele. A diferença aparece em como você responde quando ninguém mais está por perto pra te lembrar.",
+    ],
+    perguntasIndividuais: [
+      "Qual é a diferença entre saber sobre Jesus e conhecer Jesus? Em qual dos dois você diria que está hoje?",
+      "Quais das coisas que você acredita sobre Deus vieram de uma decisão sua, e quais vieram só de \"sempre ter sido assim\" na sua família?",
+    ],
+    perguntasGrupo: [
+      "Se seus pais não te levassem mais à igreja, você continuaria seguindo Jesus?",
+      "O que te impede hoje de responder à pergunta de Jesus com a mesma certeza de Pedro?",
+    ],
+    oracaoGuia: "Em silêncio, complete diante de Deus: \"Jesus, hoje eu decido dizer que você é...\". Peça que Ele revele quem Ele é, do jeito que revelou a Pedro.",
+    desafioSemana: "Em algum momento sozinho essa semana, sem ninguém por perto, responda em voz alta à pergunta de Jesus: \"quem você diz que eu sou?\" — como se estivesse falando diretamente com Ele. Anote o que sentiu.",
+    planoLeitura: [
+      { dia: 1, texto: "Mateus 16:13-20 — a pergunta em Cesareia de Filipe" },
+      { dia: 2, texto: "João 1:35-42 — o primeiro encontro de Pedro com Jesus" },
+      { dia: 3, texto: "João 1:12-13 — o direito de se tornar filho de Deus" },
+      { dia: 4, texto: "Josué 24:14-15 — \"escolhei hoje a quem sirvais\"" },
+      { dia: 5, texto: "Romanos 10:9-10 — confessar e crer" },
+      { dia: 6, texto: "João 15:1-8 — a videira verdadeira (prévia do Encontro 2)" },
+      { dia: 7, texto: "Salmo 63:1-8 — uma alma que busca a Deus de verdade" },
+    ],
+    checklist: [
+      "Li o texto de Mateus 16:13-16 na minha própria Bíblia",
+      "Respondi com sinceridade à pergunta \"quem é Jesus para mim?\"",
+      "Cumpri o desafio da semana",
+      "Memorizei o versículo do encontro",
+    ],
+    fraseFinal: "Sua fé não precisa mais depender só da fé dos seus pais. Essa jornada começou com uma pergunta — e vai continuar assim, até você chegar numa fé que é só sua.",
+  },
+
+  2: {
+    titulo: "Como continuar o que você começou?",
+    versiculoChave: { texto: "Eu sou a videira; vocês são os ramos. Se alguém permanecer em mim e eu nele, esse dará muito fruto.", ref: "João 15:5" },
+    objetivo: "Substituir a ideia de que a vida espiritual depende de \"sentir Deus\" pela ideia de permanência e hábito constante — oração, Bíblia, comunhão.",
+    resumo: "Jesus se descreve como a videira verdadeira e nos chama a permanecer n'Ele. Raiz espiritual não cresce de emoção passageira — cresce de constância, dia após dia, mesmo nos dias sem vontade nenhuma.",
+    estudo: [
+      { titulo: "Contexto histórico", texto: "Jesus provavelmente disse isso a caminho do Getsêmani, talvez olhando para a videira de ouro esculpida na entrada do templo — símbolo nacional de Israel. Mas Israel, como \"videira\" do Antigo Testamento (Isaías 5, Salmo 80), tinha decepcionado Deus. Jesus se apresenta como a videira que finalmente dá certo." },
+      { titulo: "Contexto cultural", texto: "Na agricultura da época, um ramo cortado da videira secava em poucas horas sob o sol do Oriente Médio. A imagem seria imediatamente compreendida: sem ligação com o tronco, não existe vida possível para o ramo." },
+      { titulo: "Explicação", texto: "Deus Pai é o agricultor (v.1) — Ele cuida ativamente, não fica só observando. \"Permanecer\" aparece dez vezes no capítulo (v.4); no grego fala de morar, não de visitar rápido. \"Sem mim vocês não podem fazer coisa alguma\" (v.5): não é força de vontade que produz fruto de verdade, é a seiva que vem da ligação com Cristo." },
+    ],
+    curiosidade: "A videira era tão central na identidade de Israel que uma moeda judaica do século I trazia uma folha de videira gravada — e o próprio templo de Jerusalém tinha uma videira de ouro esculpida acima da entrada principal, visível a quem entrava.",
+    aplicacoes: [
+      "Criar raiz em Cristo tem quatro práticas concretas: oração, Bíblia, comunhão e constância — nenhuma delas depende de emoção, dependem de decisão repetida.",
+      "Se sua vida espiritual dependesse só do quanto você \"sentiu Deus\" essa semana, ela estaria crescendo ou secando?",
+    ],
+    perguntasIndividuais: [
+      "Das quatro práticas (oração, Bíblia, comunhão, constância), qual é a mais fácil pra você e qual é a mais difícil? Por quê?",
+      "Já teve uma fase em que se sentiu \"cortado\" da videira — longe de Deus mesmo estando na igreja? O que ajudou a voltar?",
+    ],
+    perguntasGrupo: [
+      "O que faz uma raiz crescer, se ninguém está olhando?",
+      "O que você faz todo dia sem precisar lembrar — e por que a oração ainda não virou assim pra você?",
+    ],
+    oracaoGuia: "Peça a Deus: \"ajuda-me a permanecer mesmo nos dias em que eu não sentir nada.\" Se está numa fase seca, entregue isso a Ele com sinceridade.",
+    desafioSemana: "Escolha um horário fixo e realista de 5 a 10 minutos por dia, de oração ou leitura bíblica, e cumpra os sete dias — mesmo sem vontade nenhuma.",
+    planoLeitura: [
+      { dia: 1, texto: "João 15:1-8 — a videira verdadeira" },
+      { dia: 2, texto: "Salmo 1:1-3 — a árvore plantada junto a ribeiros de águas" },
+      { dia: 3, texto: "Lucas 5:15-16 — Jesus se retirava para orar" },
+      { dia: 4, texto: "Mateus 6:5-13 — o Pai Nosso" },
+      { dia: 5, texto: "Atos 2:42 — a constância da igreja primitiva" },
+      { dia: 6, texto: "Salmo 119:105 — a Palavra como lâmpada para os pés" },
+      { dia: 7, texto: "Hebreus 10:24-25 — não deixar de se reunir" },
+    ],
+    checklist: [
+      "Escolhi um horário fixo e realista de oração/leitura bíblica",
+      "Compartilhei esse horário com alguém que possa cobrar de mim",
+      "Cumpri os sete dias do desafio",
+      "Memorizei o versículo do encontro",
+    ],
+    fraseFinal: "Uma decisão não sustenta uma vida inteira. Um hábito, sim. Sua fé pessoal só cresce se você cuidar dela nos dias comuns.",
+  },
+
+  3: {
+    titulo: "Que história você já está escrevendo?",
+    versiculoChave: { texto: "Ninguém o despreze pela sua pouca idade; antes, torne-se um exemplo para os fiéis.", ref: "1 Timóteo 4:12" },
+    objetivo: "Mostrar que testemunho cristão não é algo pra depois — é a soma do que você já vive hoje, em palavra, procedimento, amor, fé e pureza.",
+    resumo: "Timóteo era jovem e liderava uma igreja cheia de gente mais velha. Paulo não pediu que ele esperasse crescer para ser levado a sério — pediu que vivesse de um jeito que se tornasse exemplo, agora.",
+    estudo: [
+      { titulo: "Contexto histórico", texto: "Éfeso, onde Timóteo liderava, era uma cidade grande e importante, cheia de falsos ensinos circulando. Na cultura greco-romana, respeito era quase sempre atrelado à idade — um jovem líder era visto com desconfiança automática." },
+      { titulo: "Contexto cultural", texto: "Paulo não pede que Timóteo prove sua idade ou consiga credenciais — pede que a vida dele fale mais alto que qualquer preconceito. A mesma lógica vale hoje: ninguém consegue argumentar contra uma vida consistente." },
+      { titulo: "Explicação", texto: "\"Ninguém o despreze\" não é um pedido de defesa — é o reconhecimento de que a idade vai gerar desconfiança de qualquer forma. \"Torne-se exemplo\" aponta cinco áreas concretas: palavra (o que você fala), procedimento (o que faz), amor (como trata as pessoas), fé (sua confiança em Deus) e pureza (integridade em corpo e coração)." },
+    ],
+    curiosidade: "Timóteo provavelmente tinha entre 15 e 20 anos quando Paulo escreveu essa carta — próximo da idade de muita gente que está lendo este caderno agora.",
+    aplicacoes: [
+      "Você não precisa fabricar um bom testemunho — precisa deixar que o que Deus está fazendo em você apareça nas cinco áreas que Paulo cita.",
+      "Testemunho não é uma performance para impressionar; é a consequência natural de uma vida enraizada em Cristo.",
+    ],
+    perguntasIndividuais: [
+      "Das cinco áreas de 1 Timóteo 4:12 (palavra, procedimento, amor, fé, pureza), em qual você sente que seu testemunho é mais forte? E qual é a mais fraca?",
+      "Como você quer ser lembrado daqui a dez anos?",
+    ],
+    perguntasGrupo: [
+      "Se sua vida fosse uma manchete hoje, o que diria?",
+      "Você já foi desprezado ou subestimado por ser jovem? Como reagiu?",
+    ],
+    oracaoGuia: "Peça que Deus molde, na sua área mais fraca, um testemunho consistente — não para impressionar ninguém, mas porque é fruto de estar enraizado n'Ele.",
+    desafioSemana: "Escolha sua área mais fraca entre as cinco (palavra, procedimento, amor, fé, pureza) e dê um passo concreto e pequeno nela essa semana.",
+    planoLeitura: [
+      { dia: 1, texto: "1 Timóteo 4:6-16 — o testemunho de Timóteo" },
+      { dia: 2, texto: "Mateus 5:14-16 — vocês são a luz do mundo" },
+      { dia: 3, texto: "Filipenses 1:3-6 — Deus completa a boa obra" },
+      { dia: 4, texto: "Tito 2:6-8 — exemplo de boas obras" },
+      { dia: 5, texto: "1 Coríntios 15:33 — as más companhias corrompem os bons costumes" },
+      { dia: 6, texto: "Provérbios 22:1 — mais vale um bom nome" },
+      { dia: 7, texto: "Colossenses 3:17 — tudo em nome do Senhor Jesus" },
+    ],
+    checklist: [
+      "Escrevi como quero ser lembrado daqui a dez anos",
+      "Identifiquei minha área mais fraca entre as cinco de 1 Timóteo 4:12",
+      "Dei um passo concreto nessa área esta semana",
+      "Memorizei o versículo do encontro",
+    ],
+    fraseFinal: "Você já está escrevendo sua história — com cada escolha, hoje. A pergunta não é \"algum dia vou ter um testemunho\", é \"que testemunho estou deixando agora\".",
+  },
+
+  4: {
+    titulo: "Por que eu caio na mesma coisa de novo?",
+    versiculoChave: { texto: "Andem pelo Espírito, e de modo nenhum satisfarão os desejos da carne.", ref: "Gálatas 5:16" },
+    objetivo: "Entender a batalha entre carne e Espírito com honestidade, sem vergonha paralisante, e aprender armas práticas para enfrentá-la — sem legalismo.",
+    resumo: "Ninguém acorda longe de Deus — a gente se afasta aos poucos. Até o apóstolo Paulo descreveu essa luta interior com total honestidade em Romanos 7. A saída não é força de vontade: é Jesus.",
+    estudo: [
+      { titulo: "Contexto histórico", texto: "Paulo escreve Gálatas 5 para cristãos pressionados a acreditar que seguir regras religiosas os tornaria mais santos. Ele responde mostrando que a vitória sobre o pecado vem de andar \"no Espírito\", não de esforço próprio." },
+      { titulo: "Contexto cultural", texto: "Romanos 7 é, provavelmente, o relato mais honesto de luta interior de toda a Bíblia — escrito pelo próprio Paulo. Se ele descreve essa batalha, isso já nos diz algo: até cristãos maduros enfrentam essa luta." },
+      { titulo: "Explicação", texto: "\"O que eu quero, isto não faço\" (Rm 7:15) descreve a tensão real entre a carne e o desejo novo que Deus coloca em quem segue Jesus. A virada vem no v.24-25: Paulo não termina em desespero — a saída é \"graças a Deus, por Jesus Cristo\". Andar pelo Espírito (Gl 5:16) é buscar a presença de Deus todo dia, não confiar só na força de vontade." },
+    ],
+    curiosidade: "A palavra grega para \"carne\" (sarx) em Gálatas 5 não se refere ao corpo físico em si, mas a uma natureza inclinada a viver independente de Deus — por isso é possível ter um corpo saudável e ainda assim viver \"na carne\", e vice-versa.",
+    aplicacoes: [
+      "Cinco armas concretas, sem legalismo: permanecer na Palavra, oração diária, comunhão, prestação de contas e arrependimento diário.",
+      "Existe algum \"escorregão devagar\" acontecendo na sua vida agora — algo pequeno que, se continuar, vai te afastar de Deus sem você perceber?",
+    ],
+    perguntasIndividuais: [
+      "Por que é mais fácil se afastar de Deus aos poucos do que de repente? O que isso muda na forma como devemos nos cuidar?",
+      "Ter alguém de confiança para prestar contas parece difícil ou constrangedor pra você? Por quê?",
+    ],
+    perguntasGrupo: [
+      "Você já sentiu vergonha de continuar caindo no mesmo pecado?",
+      "Por que é mais fácil escorregar ladeira abaixo do que subir?",
+    ],
+    oracaoGuia: "Agradeça: a graça de Deus é maior que qualquer queda, e Ele não desiste de ninguém no meio da batalha. Este é um momento sigiloso — ore em particular sobre o que só você e Deus sabem.",
+    desafioSemana: "Todos os dias desta semana, antes de dormir, reserve um minuto para entregar a Deus o dia — o que foi bom e onde você escorregou.",
+    planoLeitura: [
+      { dia: 1, texto: "Romanos 7:14-25 — a luta interior de Paulo" },
+      { dia: 2, texto: "Gálatas 5:16-25 — carne e Espírito" },
+      { dia: 3, texto: "1 João 1:5-9 — confissão e perdão" },
+      { dia: 4, texto: "Salmo 51:1-12 — o arrependimento de Davi" },
+      { dia: 5, texto: "1 Coríntios 10:12-13 — Deus não permite tentação maior do que se pode suportar" },
+      { dia: 6, texto: "Hebreus 4:14-16 — um sumo sacerdote que compadece das fraquezas" },
+      { dia: 7, texto: "Lamentações 3:22-23 — as misericórdias se renovam a cada manhã" },
+    ],
+    checklist: [
+      "Identifiquei uma área onde estou \"escorregando\" devagar",
+      "Escolhi um passo concreto para essa área",
+      "Pratiquei o arrependimento diário pelo menos uma vez esta semana",
+      "Memorizei o versículo do encontro",
+    ],
+    fraseFinal: "Ninguém acorda longe de Deus. A gente se afasta aos poucos. E, pela graça, também volta aos poucos — hoje mesmo, se precisar.",
+  },
+
+  5: {
+    titulo: "Quem está esculpindo você, aos poucos?",
+    versiculoChave: { texto: "Acima de tudo o que se guarda, guarda o teu coração, porque dele procedem as fontes da vida.", ref: "Provérbios 4:23" },
+    objetivo: "Trazer consciência sobre o que molda o coração — redes sociais, algoritmos, amizades — e ensinar a proteger o coração com intencionalidade, sem legalismo.",
+    resumo: "Um algoritmo aprende o que prende sua atenção e entrega mais disso, de propósito. A Bíblia já ensinava, muito antes da internet, que guardar o coração é a base de tudo o que fazemos.",
+    estudo: [
+      { titulo: "Contexto histórico", texto: "Na cultura hebraica, o \"coração\" não era só o lugar dos sentimentos — era o centro de decisão de toda a pessoa, onde nasciam pensamentos, vontades e escolhas." },
+      { titulo: "Contexto cultural", texto: "Paulo escreve Romanos 12:2 a cristãos vivendo em Roma, cercados por uma cultura pagã cheia de padrões de status, corpo e poder — muito parecido com o que redes sociais fazem hoje em escala global." },
+      { titulo: "Explicação", texto: "\"Dele procedem as fontes da vida\" (Pv 4:23): tudo o que você faz nasce primeiro do que está no coração. \"Amoldar-se\" (Rm 12:2) é pressão externa moldando algo à força; \"transformar-se\" é o oposto — uma mudança que nasce de dentro pra fora, pela renovação da mente." },
+    ],
+    curiosidade: "Estudos sobre design de aplicativos mostram que recursos como rolagem infinita e notificações push foram desenhados propositalmente usando princípios de psicologia comportamental para maximizar o tempo de uso — o mesmo tipo de técnica usada em caça-níqueis.",
+    aplicacoes: [
+      "Proteger o coração não é sair de tudo — é ser intencional: seguir contas que edificam, notar quando uma comparação está te deixando mal, e sair daquela tela.",
+      "Depois de usar redes sociais, você geralmente se sente mais perto de Deus ou mais longe? Mais grato ou mais insatisfeito?",
+    ],
+    perguntasIndividuais: [
+      "Quais amizades ou contas que você segue têm te aproximado mais de Deus, e quais têm te afastado?",
+      "O que significa, na prática, \"renovar a mente\" no seu dia a dia com o celular?",
+    ],
+    perguntasGrupo: [
+      "Depois de usar redes sociais, você se sente mais perto de Deus, ou mais longe?",
+      "Vocês já perceberam como certos conteúdos parecem \"perseguir\" vocês depois que assistem uma vez?",
+    ],
+    oracaoGuia: "Peça sabedoria e coragem para guardar o coração com intencionalidade real, sem legalismo.",
+    desafioSemana: "Escolha um dia desta semana para reduzir bastante (ou zerar) o tempo de redes sociais, e use o tempo que sobrar para orar, ler a Bíblia ou estar com pessoas de verdade.",
+    planoLeitura: [
+      { dia: 1, texto: "Provérbios 4:20-27 — guarda o teu coração" },
+      { dia: 2, texto: "Romanos 12:1-2 — não se amoldem, transformem-se" },
+      { dia: 3, texto: "Filipenses 4:8 — pensem no que é verdadeiro e puro" },
+      { dia: 4, texto: "Tiago 1:13-15 — o processo da tentação" },
+      { dia: 5, texto: "Salmo 101:2-3 — não porei coisa injusta diante dos meus olhos" },
+      { dia: 6, texto: "Mateus 6:22-23 — a lâmpada do corpo é o olho" },
+      { dia: 7, texto: "2 Coríntios 10:5 — levando cativo todo pensamento" },
+    ],
+    checklist: [
+      "Fiz a auditoria de influências (listei o que mais consumo)",
+      "Reduzi ou troquei uma influência esta semana",
+      "Vivi um dia de jejum digital",
+      "Memorizei o versículo do encontro",
+    ],
+    fraseFinal: "Você não controla tudo o que passa diante dos seus olhos. Mas controla o que decide deixar moldar o seu coração.",
+  },
+
+  6: {
+    titulo: "Quem é você quando ninguém está olhando?",
+    versiculoChave: { texto: "O homem vê o que está diante dos olhos, mas o Senhor vê o coração.", ref: "1 Samuel 16:7" },
+    objetivo: "Aprofundar o tema da integridade — diminuir a distância entre a vida pública e a vida privada — sem transformar isso em vigilância ansiosa.",
+    resumo: "Deus escolheu Davi como rei quando ele estava sozinho, cuidando de ovelhas, longe de qualquer plateia. Jesus ensina a orar \"no quarto fechado\". A fé real se revela onde ninguém está olhando.",
+    estudo: [
+      { titulo: "Contexto histórico", texto: "Na cultura de Israel, aparência física e força eram associadas à capacidade de liderar e à bênção de Deus — por isso Samuel presume que o irmão mais forte de Davi seria o escolhido. Deus quebra essa expectativa por completo." },
+      { titulo: "Contexto cultural", texto: "Em Mateus 6, Jesus fala de pessoas religiosas que oravam em praça pública, de propósito, para serem vistas. Jesus contrasta isso com uma fé praticada \"em segredo\" — onde a motivação verdadeira se revela." },
+      { titulo: "Explicação", texto: "Deus já enxergava, na rotina invisível de Davi, o caráter que faria dele um grande rei (1 Sm 16:7). O \"quarto fechado\" de Mateus 6:6 simboliza a fé praticada onde a única audiência é Deus — é ali que a fé real se revela." },
+    ],
+    curiosidade: "Davi passou anos cuidando de ovelhas antes de ser ungido rei — tempo suficiente para desenvolver a coragem (enfrentando leões e ursos) e o cuidado pastoral que mais tarde marcariam sua liderança e seus salmos.",
+    aplicacoes: [
+      "Integridade não é nunca errar — é diminuir a distância entre a vida pública e a vida privada.",
+      "Se Deus mostrasse, numa tela, tudo o que você faz e pensa quando está completamente sozinho, você ficaria tranquilo ou envergonhado?",
+    ],
+    perguntasIndividuais: [
+      "Por que é mais fácil ser \"bom\" quando alguém está olhando? O que isso revela sobre onde está nossa verdadeira motivação?",
+      "Saber que Deus vê tudo, inclusive em secreto, te dá medo ou te dá conforto? Por quê?",
+    ],
+    perguntasGrupo: [
+      "Se Deus mostrasse numa tela tudo o que você faz sozinho, você ficaria tranquilo?",
+      "Por que a gente escolhe mostrar só uma parte da vida nas redes sociais?",
+    ],
+    oracaoGuia: "Em silêncio, entregue a Deus especificamente sua vida secreta. Ele já sabe tudo — e mesmo assim, ama e chama para mais perto.",
+    desafioSemana: "Faça, essa semana, um ato de fé ou de bondade que ninguém saiba que foi você — nem mesmo pra postar depois.",
+    planoLeitura: [
+      { dia: 1, texto: "1 Samuel 16:1-13 — a unção de Davi" },
+      { dia: 2, texto: "Mateus 6:1-6 — a fé praticada em secreto" },
+      { dia: 3, texto: "Salmo 139:1-12 — Deus conhece completamente" },
+      { dia: 4, texto: "Provérbios 10:9 — quem anda em integridade anda seguro" },
+      { dia: 5, texto: "Jó 1:1 — um homem íntegro, mesmo sem plateia" },
+      { dia: 6, texto: "Colossenses 3:23 — tudo o que fizerem, façam de coração" },
+      { dia: 7, texto: "1 Coríntios 4:5 — o Senhor manifestará os desígnios dos corações" },
+    ],
+    checklist: [
+      "Fiz a reflexão \"vida pública x vida secreta\"",
+      "Orei em segredo, só entre mim e Deus",
+      "Fiz um ato secreto de fé ou bondade",
+      "Memorizei o versículo do encontro",
+    ],
+    fraseFinal: "Sua fé se tornou pessoal. Agora ela precisa se tornar verdadeira — a mesma pessoa na igreja, com os pais, com os amigos e sozinha no quarto.",
+  },
+
+  7: {
+    titulo: "Sua fé chegou até aqui. Pra onde ela vai agora?",
+    versiculoChave: { texto: "Vão e façam discípulos de todas as nações [...] e eu estarei sempre com vocês, até o fim dos tempos.", ref: "Mateus 28:19-20" },
+    objetivo: "Mostrar que discipulado não é um destino individual — é uma corrente que continua. Fechar a jornada apontando para fora, não para dentro.",
+    resumo: "Depois de seis encontros olhando pra dentro, chega a hora de olhar pra fora. Jesus não chamou seus discípulos só para crescerem sozinhos, mas para formarem outros discípulos — e essa missão já é sua, agora.",
+    estudo: [
+      { titulo: "Contexto histórico", texto: "Essas são praticamente as últimas palavras de Jesus na terra, ditas a um grupo pequeno de discípulos — pescadores, um cobrador de impostos, gente comum, sem status religioso oficial." },
+      { titulo: "Contexto cultural", texto: "\"Fazer discípulos\" na cultura judaica significava muito mais que ensinar informação — era formar um estilo de vida inteiro, andando junto, dia após dia, com quem estava aprendendo." },
+      { titulo: "Explicação", texto: "\"Toda autoridade me foi dada\" (v.18): a missão não depende da nossa capacidade, depende da autoridade de Jesus. \"Vão\" (v.19) é um verbo de ação. \"Eu estarei sempre com vocês\" (v.20) não é um \"boa sorte, se vira\" — é uma promessa de presença constante." },
+    ],
+    curiosidade: "A palavra grega para \"discípulo\" (mathetes) descreve alguém que aprende observando e imitando o mestre no dia a dia — não alguém que só assiste a aulas. É por isso que a Grande Comissão fala em \"ensinar a obedecer\", não apenas \"ensinar a saber\".",
+    aplicacoes: [
+      "Fazer discípulos, na sua fase de vida, não significa pregar em praças — significa amar de verdade quem está ao seu redor, servir sem esperar nada em troca, e contar sua própria história com Jesus.",
+      "Existe alguém na sua vida que você poderia ajudar a se aproximar de Jesus, começando essa semana?",
+    ],
+    perguntasIndividuais: [
+      "Olhando pra trás, nos sete encontros, qual foi o que mais falou com você? O que Deus mudou em você durante essa jornada?",
+      "O que te dá medo ou insegurança na ideia de ajudar outra pessoa a se aproximar de Jesus?",
+    ],
+    perguntasGrupo: [
+      "Quem plantou em você a fé que hoje é sua?",
+      "O que vocês querem que essa turma seja, daqui a alguns anos?",
+    ],
+    oracaoGuia: "Orem uns pelos outros, por nome, agradecendo o que Deus fez em cada um durante a jornada RAÍZES. Depois, orem pela pessoa que cada um quer ver mais perto de Jesus.",
+    desafioSemana: "Dê o primeiro passo concreto em direção à pessoa que você escolheu na dinâmica \"um nome, uma oração\". Não precisa ser perfeito — precisa ser real.",
+    planoLeitura: [
+      { dia: 1, texto: "Mateus 28:16-20 — a Grande Comissão" },
+      { dia: 2, texto: "2 Timóteo 2:1-2 — passar adiante o que foi aprendido" },
+      { dia: 3, texto: "João 13:34-35 — o amor como marca dos discípulos" },
+      { dia: 4, texto: "Atos 1:8 — testemunhas até os confins da terra" },
+      { dia: 5, texto: "1 Tessalonicenses 2:8 — repartindo não só o evangelho, mas a própria vida" },
+      { dia: 6, texto: "Romanos 10:14-15 — como ouvirão sem quem pregue?" },
+      { dia: 7, texto: "Filipenses 1:3-6 — gratidão por quem caminhou com você" },
+    ],
+    checklist: [
+      "Escrevi o nome de alguém que quero ver mais perto de Jesus",
+      "Dei um passo concreto em direção a essa pessoa",
+      "Refleti sobre o que Deus mudou em mim nesta jornada",
+      "Memorizei o versículo do encontro",
+    ],
+    fraseFinal: "Você chegou aqui dependendo da fé dos outros. Sai daqui chamado a viver — e a passar adiante — uma fé que agora é só sua.",
+  },
+
+};

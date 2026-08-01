@@ -15,6 +15,7 @@
     <span class="meeting-tag">Encontro 3 de 7 · Que história você já está escrevendo?</span>
     <div class="deck-dots" data-dots></div>
     <div class="deck-controls">
+      <button data-baixar-pdf title="Baixar Caderno em PDF">📄</button>
       <button data-menu-toggle title="Menu de encontros">☰</button>
       <button data-fullscreen title="Tela cheia">⤢</button>
       <a href="index.html" title="Voltar ao início"><button>✕</button></a>
@@ -162,10 +163,17 @@
   <script src="assets/js/progresso.js"></script>
   <script src="assets/js/menu.js"></script>
   <script src="assets/js/deck.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="assets/js/pdf-data.js"></script>
+  <script src="assets/js/gerar-pdf.js"></script>
   <script>
     document.getElementById("btnConcluir").addEventListener("click", () => {
       Progresso.marcarConcluido(3);
       window.location.href = "encontro-04.html";
+    });
+    document.querySelector("[data-baixar-pdf]")?.addEventListener("click", (e) => {
+      e.stopPropagation();
+      CadernoPDF.gerar(3);
     });
   </script>
 </body>
