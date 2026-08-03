@@ -9,17 +9,32 @@ const CADERNOS = {
   1: {
     titulo: "Quem é Jesus, pra você?",
     versiculoChave: { texto: "Tu és o Cristo, o Filho do Deus vivo.", ref: "Mateus 16:16" },
+    fraseImpacto: "Fé herdada não salva. Fé decidida, sim.",
     objetivo: "Levar você a perceber a diferença entre uma fé herdada da família e uma fé decidida por você mesmo — e a dar o primeiro passo rumo a essa decisão pessoal.",
     resumo: "Jesus perguntou aos discípulos quem o povo dizia que Ele era — e depois mudou a pergunta para \"e vocês?\". Essa mesma pergunta chega até você agora: sua fé até hoje pode ter sido, em boa parte, a fé dos seus pais. Este é o começo da jornada de torná-la sua.",
+    quemEscreveu: "O apóstolo Mateus, um dos doze discípulos de Jesus e ex-cobrador de impostos.",
+    paraQuem: "Uma comunidade judaica cristã, para mostrar que Jesus é o Messias prometido.",
+    porque: "Para registrar o momento em que os discípulos declaram, em voz alta, quem Jesus realmente é.",
     estudo: [
       { titulo: "Contexto histórico", texto: "Mateus 16 acontece em Cesareia de Filipe, uma cidade a mais de 40 km ao norte da Galileia, aos pés do Monte Hermon — uma região conhecida pela adoração a Baal e ao deus grego Pã, com um grande santuário de pedra dedicado a ele." },
       { titulo: "Contexto cultural", texto: "Não é acaso Jesus escolher justamente esse lugar, cercado de templos pagãos, para perguntar quem os discípulos diziam que Ele era. É como fazer essa pergunta hoje no meio de um shopping cheio de vitrines competindo pela sua atenção." },
       { titulo: "Explicação", texto: "Antes de perguntar aos discípulos, Jesus perguntou o que \"o povo\" dizia (v.13-14) — João Batista, Elias, um profeta. Depois muda para \"e vocês\" (v.15): de opinião pública para resposta pessoal. Pedro responde com convicção (v.16); Jesus revela depois que foi o Pai quem mostrou isso a ele — conhecer Jesus de verdade não vem só da tradição de família, vem de Deus, a quem busca de coração aberto." },
     ],
     curiosidade: "O rochedo de Cesareia de Filipe, de onde jorrava água associada ao \"portão dos infernos\" na mitologia da época, ficava a poucos metros de onde Jesus disse a Pedro: \"sobre esta pedra edificarei a minha igreja\" — uma declaração de vitória bem no território que representava o oposto dela.",
+    aplicacaoAmanha: "Amanhã, antes de pegar o celular, responda em pensamento: \"quem eu digo que Jesus é, hoje?\" — e viva o dia como se essa resposta fosse verdade.",
     aplicacoes: [
       "Sua fé até hoje pode ter sido, em boa parte, a fé dos seus pais — e isso é um bom começo, mas não pode ser o fim da história.",
       "Conhecer Jesus de verdade é diferente de saber sobre Ele. A diferença aparece em como você responde quando ninguém mais está por perto pra te lembrar.",
+    ],
+    pareEPense: [
+      "O que Deus quis falar comigo hoje?",
+      "Existe alguma área da minha fé que ainda depende mais dos outros do que de mim?",
+      "Se eu tivesse que responder agora, sem pensar duas vezes, quem eu diria que Jesus é?",
+    ],
+    conversaFamilia: [
+      "Quando vocês decidiram seguir Jesus?",
+      "Teve algum momento em que a fé de vocês deixou de ser só da família e virou de vocês mesmos?",
+      "O que vocês diriam pra mim sobre essa fase que estou vivendo agora?",
     ],
     perguntasIndividuais: [
       "Qual é a diferença entre saber sobre Jesus e conhecer Jesus? Em qual dos dois você diria que está hoje?",
@@ -47,22 +62,38 @@ const CADERNOS = {
       "Memorizei o versículo do encontro",
     ],
     fraseFinal: "Sua fé não precisa mais depender só da fé dos seus pais. Essa jornada começou com uma pergunta — e vai continuar assim, até você chegar numa fé que é só sua.",
+    proximaEtapa: "Hoje você descobriu que sua fé precisa ser sua. No próximo encontro você vai aprender como criar raízes profundas — pra permanecer firme mesmo quando a vontade desaparecer.",
   },
 
   2: {
     titulo: "Como continuar o que você começou?",
     versiculoChave: { texto: "Eu sou a videira; vocês são os ramos. Se alguém permanecer em mim e eu nele, esse dará muito fruto.", ref: "João 15:5" },
+    fraseImpacto: "Raiz não cresce de emoção. Cresce de constância.",
     objetivo: "Substituir a ideia de que a vida espiritual depende de \"sentir Deus\" pela ideia de permanência e hábito constante — oração, Bíblia, comunhão.",
     resumo: "Jesus se descreve como a videira verdadeira e nos chama a permanecer n'Ele. Raiz espiritual não cresce de emoção passageira — cresce de constância, dia após dia, mesmo nos dias sem vontade nenhuma.",
+    quemEscreveu: "O apóstolo João, o discípulo mais próximo de Jesus.",
+    paraQuem: "Igrejas do fim do primeiro século, enfrentando perseguição e precisando de raízes firmes.",
+    porque: "Para ensinar como permanecer ligado a Jesus mesmo em tempos difíceis.",
     estudo: [
       { titulo: "Contexto histórico", texto: "Jesus provavelmente disse isso a caminho do Getsêmani, talvez olhando para a videira de ouro esculpida na entrada do templo — símbolo nacional de Israel. Mas Israel, como \"videira\" do Antigo Testamento (Isaías 5, Salmo 80), tinha decepcionado Deus. Jesus se apresenta como a videira que finalmente dá certo." },
       { titulo: "Contexto cultural", texto: "Na agricultura da época, um ramo cortado da videira secava em poucas horas sob o sol do Oriente Médio. A imagem seria imediatamente compreendida: sem ligação com o tronco, não existe vida possível para o ramo." },
       { titulo: "Explicação", texto: "Deus Pai é o agricultor (v.1) — Ele cuida ativamente, não fica só observando. \"Permanecer\" aparece dez vezes no capítulo (v.4); no grego fala de morar, não de visitar rápido. \"Sem mim vocês não podem fazer coisa alguma\" (v.5): não é força de vontade que produz fruto de verdade, é a seiva que vem da ligação com Cristo." },
     ],
     curiosidade: "A videira era tão central na identidade de Israel que uma moeda judaica do século I trazia uma folha de videira gravada — e o próprio templo de Jerusalém tinha uma videira de ouro esculpida acima da entrada principal, visível a quem entrava.",
+    aplicacaoAmanha: "Amanhã, antes de qualquer outra coisa, separe 5 minutos pra orar ou ler a Bíblia — antes do celular, não depois dele.",
     aplicacoes: [
       "Criar raiz em Cristo tem quatro práticas concretas: oração, Bíblia, comunhão e constância — nenhuma delas depende de emoção, dependem de decisão repetida.",
       "Se sua vida espiritual dependesse só do quanto você \"sentiu Deus\" essa semana, ela estaria crescendo ou secando?",
+    ],
+    pareEPense: [
+      "O que Deus quis falar comigo hoje?",
+      "Existe alguma área onde minha fé ainda depende mais de emoção do que de constância?",
+      "O que preciso mudar esta semana pra permanecer, mesmo nos dias difíceis?",
+    ],
+    conversaFamilia: [
+      "Qual foi o maior desafio da adolescência de vocês, na fé?",
+      "Como Deus ajudou vocês a manterem a fé firme, mesmo nos dias ruins?",
+      "Vocês têm algum hábito espiritual que praticam até hoje? Qual?",
     ],
     perguntasIndividuais: [
       "Das quatro práticas (oração, Bíblia, comunhão, constância), qual é a mais fácil pra você e qual é a mais difícil? Por quê?",
@@ -90,22 +121,38 @@ const CADERNOS = {
       "Memorizei o versículo do encontro",
     ],
     fraseFinal: "Uma decisão não sustenta uma vida inteira. Um hábito, sim. Sua fé pessoal só cresce se você cuidar dela nos dias comuns.",
+    proximaEtapa: "Você está aprendendo a permanecer. No próximo encontro vamos falar sobre o testemunho que você já está construindo, com cada escolha, mesmo sem perceber.",
   },
 
   3: {
     titulo: "Que história você já está escrevendo?",
     versiculoChave: { texto: "Ninguém o despreze pela sua pouca idade; antes, torne-se um exemplo para os fiéis.", ref: "1 Timóteo 4:12" },
+    fraseImpacto: "Você não espera pra ter um testemunho. Você já é um.",
     objetivo: "Mostrar que testemunho cristão não é algo pra depois — é a soma do que você já vive hoje, em palavra, procedimento, amor, fé e pureza.",
     resumo: "Timóteo era jovem e liderava uma igreja cheia de gente mais velha. Paulo não pediu que ele esperasse crescer para ser levado a sério — pediu que vivesse de um jeito que se tornasse exemplo, agora.",
+    quemEscreveu: "O apóstolo Paulo, mentor espiritual de Timóteo.",
+    paraQuem: "Timóteo, um jovem líder de igreja em Éfeso.",
+    porque: "Para encorajar Timóteo a liderar pelo exemplo, apesar da pouca idade.",
     estudo: [
       { titulo: "Contexto histórico", texto: "Éfeso, onde Timóteo liderava, era uma cidade grande e importante, cheia de falsos ensinos circulando. Na cultura greco-romana, respeito era quase sempre atrelado à idade — um jovem líder era visto com desconfiança automática." },
       { titulo: "Contexto cultural", texto: "Paulo não pede que Timóteo prove sua idade ou consiga credenciais — pede que a vida dele fale mais alto que qualquer preconceito. A mesma lógica vale hoje: ninguém consegue argumentar contra uma vida consistente." },
       { titulo: "Explicação", texto: "\"Ninguém o despreze\" não é um pedido de defesa — é o reconhecimento de que a idade vai gerar desconfiança de qualquer forma. \"Torne-se exemplo\" aponta cinco áreas concretas: palavra (o que você fala), procedimento (o que faz), amor (como trata as pessoas), fé (sua confiança em Deus) e pureza (integridade em corpo e coração)." },
     ],
     curiosidade: "Timóteo provavelmente tinha entre 15 e 20 anos quando Paulo escreveu essa carta — próximo da idade de muita gente que está lendo este caderno agora.",
+    aplicacaoAmanha: "Amanhã, escolha uma das cinco áreas (palavra, procedimento, amor, fé, pureza) e viva ela de propósito, mesmo em uma situação pequena.",
     aplicacoes: [
       "Você não precisa fabricar um bom testemunho — precisa deixar que o que Deus está fazendo em você apareça nas cinco áreas que Paulo cita.",
       "Testemunho não é uma performance para impressionar; é a consequência natural de uma vida enraizada em Cristo.",
+    ],
+    pareEPense: [
+      "O que Deus quis falar comigo hoje?",
+      "Existe alguma área da minha vida onde meu testemunho ainda não condiz com minha fé?",
+      "O que preciso mudar esta semana pra que minha vida fale mais alto que qualquer preconceito?",
+    ],
+    conversaFamilia: [
+      "Como vocês construíram a reputação de vocês quando eram jovens?",
+      "Vocês já foram subestimados por serem jovens? O que fizeram?",
+      "O que vocês gostariam que as pessoas dissessem de mim daqui a dez anos?",
     ],
     perguntasIndividuais: [
       "Das cinco áreas de 1 Timóteo 4:12 (palavra, procedimento, amor, fé, pureza), em qual você sente que seu testemunho é mais forte? E qual é a mais fraca?",
@@ -133,22 +180,38 @@ const CADERNOS = {
       "Memorizei o versículo do encontro",
     ],
     fraseFinal: "Você já está escrevendo sua história — com cada escolha, hoje. A pergunta não é \"algum dia vou ter um testemunho\", é \"que testemunho estou deixando agora\".",
+    proximaEtapa: "Você já está escrevendo sua história. No próximo encontro vamos falar com honestidade sobre a luta que todo mundo enfrenta, até quando quer fazer o certo.",
   },
 
   4: {
     titulo: "Por que eu caio na mesma coisa de novo?",
     versiculoChave: { texto: "Andem pelo Espírito, e de modo nenhum satisfarão os desejos da carne.", ref: "Gálatas 5:16" },
+    fraseImpacto: "Ninguém acorda longe de Deus. A gente se afasta aos poucos.",
     objetivo: "Entender a batalha entre carne e Espírito com honestidade, sem vergonha paralisante, e aprender armas práticas para enfrentá-la — sem legalismo.",
     resumo: "Ninguém acorda longe de Deus — a gente se afasta aos poucos. Até o apóstolo Paulo descreveu essa luta interior com total honestidade em Romanos 7. A saída não é força de vontade: é Jesus.",
+    quemEscreveu: "O apóstolo Paulo.",
+    paraQuem: "Igrejas da Galácia e a igreja em Roma.",
+    porque: "Para explicar a luta entre carne e Espírito e apontar para a graça de Jesus.",
     estudo: [
       { titulo: "Contexto histórico", texto: "Paulo escreve Gálatas 5 para cristãos pressionados a acreditar que seguir regras religiosas os tornaria mais santos. Ele responde mostrando que a vitória sobre o pecado vem de andar \"no Espírito\", não de esforço próprio." },
       { titulo: "Contexto cultural", texto: "Romanos 7 é, provavelmente, o relato mais honesto de luta interior de toda a Bíblia — escrito pelo próprio Paulo. Se ele descreve essa batalha, isso já nos diz algo: até cristãos maduros enfrentam essa luta." },
       { titulo: "Explicação", texto: "\"O que eu quero, isto não faço\" (Rm 7:15) descreve a tensão real entre a carne e o desejo novo que Deus coloca em quem segue Jesus. A virada vem no v.24-25: Paulo não termina em desespero — a saída é \"graças a Deus, por Jesus Cristo\". Andar pelo Espírito (Gl 5:16) é buscar a presença de Deus todo dia, não confiar só na força de vontade." },
     ],
     curiosidade: "A palavra grega para \"carne\" (sarx) em Gálatas 5 não se refere ao corpo físico em si, mas a uma natureza inclinada a viver independente de Deus — por isso é possível ter um corpo saudável e ainda assim viver \"na carne\", e vice-versa.",
+    aplicacaoAmanha: "Amanhã, antes de dormir, entregue o dia a Deus — o que foi bom e onde você escorregou. Sem se punir, só entregando.",
     aplicacoes: [
       "Cinco armas concretas, sem legalismo: permanecer na Palavra, oração diária, comunhão, prestação de contas e arrependimento diário.",
       "Existe algum \"escorregão devagar\" acontecendo na sua vida agora — algo pequeno que, se continuar, vai te afastar de Deus sem você perceber?",
+    ],
+    pareEPense: [
+      "O que Deus quis falar comigo hoje?",
+      "Existe alguma área onde estou escorregando devagar, sem perceber?",
+      "O que preciso mudar esta semana pra voltar a caminhar perto de Deus?",
+    ],
+    conversaFamilia: [
+      "Vocês também enfrentaram lutas repetidas quando eram jovens? Quais?",
+      "O que ajudou vocês a não desistir, mesmo caindo várias vezes?",
+      "Como vocês lidam com a culpa depois de errar?",
     ],
     perguntasIndividuais: [
       "Por que é mais fácil se afastar de Deus aos poucos do que de repente? O que isso muda na forma como devemos nos cuidar?",
@@ -176,22 +239,38 @@ const CADERNOS = {
       "Memorizei o versículo do encontro",
     ],
     fraseFinal: "Ninguém acorda longe de Deus. A gente se afasta aos poucos. E, pela graça, também volta aos poucos — hoje mesmo, se precisar.",
+    proximaEtapa: "Você entendeu que a batalha acontece por dentro. No próximo encontro vamos falar sobre o que também a alimenta por fora — e como proteger seu coração.",
   },
 
   5: {
     titulo: "Quem está esculpindo você, aos poucos?",
     versiculoChave: { texto: "Acima de tudo o que se guarda, guarda o teu coração, porque dele procedem as fontes da vida.", ref: "Provérbios 4:23" },
+    fraseImpacto: "O que você mais consome está te formando em alguém.",
     objetivo: "Trazer consciência sobre o que molda o coração — redes sociais, algoritmos, amizades — e ensinar a proteger o coração com intencionalidade, sem legalismo.",
     resumo: "Um algoritmo aprende o que prende sua atenção e entrega mais disso, de propósito. A Bíblia já ensinava, muito antes da internet, que guardar o coração é a base de tudo o que fazemos.",
+    quemEscreveu: "O rei Salomão (Provérbios) e o apóstolo Paulo (Romanos).",
+    paraQuem: "O povo de Israel e os cristãos vivendo em Roma.",
+    porque: "Para ensinar como guardar o coração das influências ao redor.",
     estudo: [
       { titulo: "Contexto histórico", texto: "Na cultura hebraica, o \"coração\" não era só o lugar dos sentimentos — era o centro de decisão de toda a pessoa, onde nasciam pensamentos, vontades e escolhas." },
       { titulo: "Contexto cultural", texto: "Paulo escreve Romanos 12:2 a cristãos vivendo em Roma, cercados por uma cultura pagã cheia de padrões de status, corpo e poder — muito parecido com o que redes sociais fazem hoje em escala global." },
       { titulo: "Explicação", texto: "\"Dele procedem as fontes da vida\" (Pv 4:23): tudo o que você faz nasce primeiro do que está no coração. \"Amoldar-se\" (Rm 12:2) é pressão externa moldando algo à força; \"transformar-se\" é o oposto — uma mudança que nasce de dentro pra fora, pela renovação da mente." },
     ],
     curiosidade: "Estudos sobre design de aplicativos mostram que recursos como rolagem infinita e notificações push foram desenhados propositalmente usando princípios de psicologia comportamental para maximizar o tempo de uso — o mesmo tipo de técnica usada em caça-níqueis.",
+    aplicacaoAmanha: "Amanhã, antes de abrir uma rede social, pergunte-se: \"isso vai me aproximar ou me afastar de quem eu quero ser em Cristo?\"",
     aplicacoes: [
       "Proteger o coração não é sair de tudo — é ser intencional: seguir contas que edificam, notar quando uma comparação está te deixando mal, e sair daquela tela.",
       "Depois de usar redes sociais, você geralmente se sente mais perto de Deus ou mais longe? Mais grato ou mais insatisfeito?",
+    ],
+    pareEPense: [
+      "O que Deus quis falar comigo hoje?",
+      "Existe alguma influência na minha vida que está me afastando de Deus sem eu perceber?",
+      "O que preciso mudar esta semana pra guardar melhor meu coração?",
+    ],
+    conversaFamilia: [
+      "Como era a vida de vocês sem redes sociais, quando eram jovens?",
+      "O que vocês acham que mais influenciava vocês na adolescência?",
+      "Vocês têm alguma dica de como proteger a mente do que consumimos?",
     ],
     perguntasIndividuais: [
       "Quais amizades ou contas que você segue têm te aproximado mais de Deus, e quais têm te afastado?",
@@ -219,22 +298,38 @@ const CADERNOS = {
       "Memorizei o versículo do encontro",
     ],
     fraseFinal: "Você não controla tudo o que passa diante dos seus olhos. Mas controla o que decide deixar moldar o seu coração.",
+    proximaEtapa: "Você está aprendendo a guardar o coração. No próximo encontro vamos falar sobre quem você é quando ninguém está olhando — o teste real da sua fé.",
   },
 
   6: {
     titulo: "Quem é você quando ninguém está olhando?",
     versiculoChave: { texto: "O homem vê o que está diante dos olhos, mas o Senhor vê o coração.", ref: "1 Samuel 16:7" },
+    fraseImpacto: "Deus vê tudo — e mesmo assim, ama.",
     objetivo: "Aprofundar o tema da integridade — diminuir a distância entre a vida pública e a vida privada — sem transformar isso em vigilância ansiosa.",
     resumo: "Deus escolheu Davi como rei quando ele estava sozinho, cuidando de ovelhas, longe de qualquer plateia. Jesus ensina a orar \"no quarto fechado\". A fé real se revela onde ninguém está olhando.",
+    quemEscreveu: "O profeta Samuel (historicamente) e o apóstolo Mateus.",
+    paraQuem: "O povo de Israel e os primeiros seguidores de Jesus.",
+    porque: "Para mostrar que Deus valoriza o caráter interior, não a aparência.",
     estudo: [
       { titulo: "Contexto histórico", texto: "Na cultura de Israel, aparência física e força eram associadas à capacidade de liderar e à bênção de Deus — por isso Samuel presume que o irmão mais forte de Davi seria o escolhido. Deus quebra essa expectativa por completo." },
       { titulo: "Contexto cultural", texto: "Em Mateus 6, Jesus fala de pessoas religiosas que oravam em praça pública, de propósito, para serem vistas. Jesus contrasta isso com uma fé praticada \"em segredo\" — onde a motivação verdadeira se revela." },
       { titulo: "Explicação", texto: "Deus já enxergava, na rotina invisível de Davi, o caráter que faria dele um grande rei (1 Sm 16:7). O \"quarto fechado\" de Mateus 6:6 simboliza a fé praticada onde a única audiência é Deus — é ali que a fé real se revela." },
     ],
     curiosidade: "Davi passou anos cuidando de ovelhas antes de ser ungido rei — tempo suficiente para desenvolver a coragem (enfrentando leões e ursos) e o cuidado pastoral que mais tarde marcariam sua liderança e seus salmos.",
+    aplicacaoAmanha: "Amanhã, faça algo bom sem que ninguém saiba — e observe como isso muda a forma como você se sente por dentro.",
     aplicacoes: [
       "Integridade não é nunca errar — é diminuir a distância entre a vida pública e a vida privada.",
       "Se Deus mostrasse, numa tela, tudo o que você faz e pensa quando está completamente sozinho, você ficaria tranquilo ou envergonhado?",
+    ],
+    pareEPense: [
+      "O que Deus quis falar comigo hoje?",
+      "Existe uma diferença grande entre quem eu sou em público e quem eu sou sozinho?",
+      "O que preciso mudar esta semana pra ser a mesma pessoa em todo lugar?",
+    ],
+    conversaFamilia: [
+      "Vocês acham fácil ou difícil manter a integridade quando ninguém está olhando?",
+      "Já tiveram algum momento em que precisaram escolher fazer o certo mesmo sem ninguém saber?",
+      "O que significa, pra vocês, ter um caráter íntegro?",
     ],
     perguntasIndividuais: [
       "Por que é mais fácil ser \"bom\" quando alguém está olhando? O que isso revela sobre onde está nossa verdadeira motivação?",
@@ -262,22 +357,38 @@ const CADERNOS = {
       "Memorizei o versículo do encontro",
     ],
     fraseFinal: "Sua fé se tornou pessoal. Agora ela precisa se tornar verdadeira — a mesma pessoa na igreja, com os pais, com os amigos e sozinha no quarto.",
+    proximaEtapa: "Sua fé ficou mais verdadeira. No último encontro da jornada, vamos falar sobre pra onde essa fé vai agora — e quem você pode ajudar a começar essa mesma caminhada.",
   },
 
   7: {
     titulo: "Sua fé chegou até aqui. Pra onde ela vai agora?",
     versiculoChave: { texto: "Vão e façam discípulos de todas as nações [...] e eu estarei sempre com vocês, até o fim dos tempos.", ref: "Mateus 28:19-20" },
+    fraseImpacto: "Discipulado não é um destino. É uma corrente que continua.",
     objetivo: "Mostrar que discipulado não é um destino individual — é uma corrente que continua. Fechar a jornada apontando para fora, não para dentro.",
     resumo: "Depois de seis encontros olhando pra dentro, chega a hora de olhar pra fora. Jesus não chamou seus discípulos só para crescerem sozinhos, mas para formarem outros discípulos — e essa missão já é sua, agora.",
+    quemEscreveu: "O apóstolo Mateus.",
+    paraQuem: "Os discípulos de Jesus, antes de Sua ascensão.",
+    porque: "Para deixar a missão final: fazer discípulos de todas as nações.",
     estudo: [
       { titulo: "Contexto histórico", texto: "Essas são praticamente as últimas palavras de Jesus na terra, ditas a um grupo pequeno de discípulos — pescadores, um cobrador de impostos, gente comum, sem status religioso oficial." },
       { titulo: "Contexto cultural", texto: "\"Fazer discípulos\" na cultura judaica significava muito mais que ensinar informação — era formar um estilo de vida inteiro, andando junto, dia após dia, com quem estava aprendendo." },
       { titulo: "Explicação", texto: "\"Toda autoridade me foi dada\" (v.18): a missão não depende da nossa capacidade, depende da autoridade de Jesus. \"Vão\" (v.19) é um verbo de ação. \"Eu estarei sempre com vocês\" (v.20) não é um \"boa sorte, se vira\" — é uma promessa de presença constante." },
     ],
     curiosidade: "A palavra grega para \"discípulo\" (mathetes) descreve alguém que aprende observando e imitando o mestre no dia a dia — não alguém que só assiste a aulas. É por isso que a Grande Comissão fala em \"ensinar a obedecer\", não apenas \"ensinar a saber\".",
+    aplicacaoAmanha: "Amanhã, dê o primeiro passo em direção à pessoa que você quer ver mais perto de Jesus — uma mensagem, um convite, uma oração por ela.",
     aplicacoes: [
       "Fazer discípulos, na sua fase de vida, não significa pregar em praças — significa amar de verdade quem está ao seu redor, servir sem esperar nada em troca, e contar sua própria história com Jesus.",
       "Existe alguém na sua vida que você poderia ajudar a se aproximar de Jesus, começando essa semana?",
+    ],
+    pareEPense: [
+      "O que Deus quis falar comigo hoje?",
+      "Olhando pra trás nos sete encontros, o que Deus mudou em mim?",
+      "O que preciso fazer esta semana pra começar a passar essa fé adiante?",
+    ],
+    conversaFamilia: [
+      "Quem foi a pessoa que mais ajudou vocês a se aproximar de Jesus?",
+      "Vocês já ajudaram alguém a conhecer a Jesus? Como foi?",
+      "O que vocês esperam ver em mim daqui a alguns anos, na fé?",
     ],
     perguntasIndividuais: [
       "Olhando pra trás, nos sete encontros, qual foi o que mais falou com você? O que Deus mudou em você durante essa jornada?",
@@ -305,6 +416,7 @@ const CADERNOS = {
       "Memorizei o versículo do encontro",
     ],
     fraseFinal: "Você chegou aqui dependendo da fé dos outros. Sai daqui chamado a viver — e a passar adiante — uma fé que agora é só sua.",
+    proximaEtapa: "Você concluiu os sete encontros da Jornada RAÍZES. Agora é hora do Projeto Final: contar, com suas próprias palavras, a história de como sua fé deixou de ser emprestada e passou a ser sua.",
   },
 
 };
