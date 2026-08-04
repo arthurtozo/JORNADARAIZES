@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu Diário de Caminhada — RAÍZES</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<style>
+  .diario-header {
+    background: var(--color-root); color: #fff;
+    padding: var(--space-8) var(--space-5) var(--space-7);
+    text-align: center;
+  }
+  .diario-header .eyebrow { color: var(--color-gold-soft); justify-content: center; display: flex; }
+  .diario-header h1 { color: #fff; margin-top: var(--space-3); }
+  .diario-header p { color: rgba(255,255,255,0.85); max-width: 600px; margin: 0 auto; }
+
+  main { padding: var(--space-8) 0; }
+  main .container { max-width: var(--content-width); }
+
+  .diario-section { margin-bottom: var(--space-9); }
+  .diario-section h2 { margin-bottom: var(--space-2); }
+  .diario-section .lede { margin-bottom: var(--space-6); }
+
+  .encontro-card {
+    background: var(--color-surface); border-radius: var(--radius-l);
+    padding: var(--space-6); margin-bottom: var(--space-5);
+  }
+  .encontro-card h3 { margin-bottom: var(--space-4); }
+  .encontro-card label {
+    display: block; font-family: var(--font-mono); font-size: var(--fs-caption);
+    text-transform: uppercase; letter-spacing: .05em; color: var(--color-root-light);
+    margin-bottom: var(--space-2);
+  }
+  .encontro-card textarea, .encontro-card input[type="text"] {
+    width: 100%; border: 1px solid var(--color-line-strong); border-radius: var(--radius-s);
+    padding: var(--space-3) var(--space-4); font-family: var(--font-body); font-size: var(--fs-body);
+    background: #fff; margin-bottom: var(--space-4);
+  }
+  .encontro-card textarea { min-height: 70px; resize: vertical; }
+  .save-status {
+    font-size: var(--fs-caption); color: var(--color-root-light); font-family: var(--font-mono);
+    opacity: 0; transition: opacity var(--dur-med);
+  }
+  .save-status.is-visible { opacity: 1; }
+
+  .list-add { display: flex; gap: var(--space-2); margin-bottom: var(--space-4); }
+  .list-add input {
+    flex: 1; border: 1px solid var(--color-line-strong); border-radius: var(--radius-s);
+    padding: var(--space-3) var(--space-4); font-family: var(--font-body); font-size: var(--fs-body);
+  }
+  .item-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--space-2); }
+  .item-list li {
+    display: flex; justify-content: space-between; align-items: center; gap: var(--space-3);
+    background: #fff; border: 1px solid var(--color-line); border-radius: var(--radius-s);
+    padding: var(--space-3) var(--space-4);
+  }
+  .item-list button {
+    border: none; background: none; color: var(--color-ink-soft); font-size: 1rem; cursor: pointer;
+  }
+  .item-list button:hover { color: var(--color-clay); }
+  .empty-hint { color: var(--color-ink-soft); font-size: var(--fs-small); font-style: italic; }
+
+  .carta-box textarea { min-height: 140px; }
+
+  .final-cta {
+    text-align: center; padding: var(--space-8) var(--space-5);
+    background: var(--color-root); border-radius: var(--radius-l); color: #fff;
+  }
+  .final-cta p { color: rgba(255,255,255,0.85); max-width: 480px; margin: 0 auto var(--space-5); }
+</style>
+</head>
+<body>
+
+  <header class="diario-header">
+    <span class="eyebrow">Registro pessoal</span>
+    <h1>Meu Diário de Caminhada</h1>
+    <p>Um espaço só seu, salvo neste navegador, pra guardar o que Deus tem falado com você ao longo dos sete encontros da Jornada RAÍZES.</p>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <section class="diario-section">
+        <h2>Meus encontros</h2>
+        <p class="lede">Volte aqui depois de cada encontro e registre o que ficou.</p>
+        <div id="encontrosWrap"></div>
+      </section>
+
+      <section class="diario-section">
+        <h2>Pedidos de oração</h2>
+        <p class="lede">O que você tem pedido a Deus ao longo dessa jornada.</p>
+        <div class="list-add">
+          <input type="text" id="inputPedido" placeholder="Escreva um pedido de oração...">
+          <button class="btn btn-primary" id="btnAddPedido">Adicionar</button>
+        </div>
+        <ul class="item-list" id="listaPedidos"></ul>
+      </section>
+
+      <section class="diario-section">
+        <h2>Respostas de oração</h2>
+        <p class="lede">O que Deus já respondeu.</p>
+        <div class="list-add">
+          <input type="text" id="inputResposta" placeholder="Escreva uma resposta de oração...">
+          <button class="btn btn-primary" id="btnAddResposta">Adicionar</button>
+        </div>
+        <ul class="item-list" id="listaRespostas"></ul>
+      </section>
+
+      <section class="diario-section">
+        <h2>Decisões que tomei</h2>
+        <p class="lede">Cada decisão concreta que você foi tomando ao longo da jornada.</p>
+        <div class="list-add">
+          <input type="text" id="inputDecisao" placeholder="Escreva uma decisão...">
+          <button class="btn btn-primary" id="btnAddDecisao">Adicionar</button>
+        </div>
+        <ul class="item-list" id="listaDecisoes"></ul>
+      </section>
+
+      <section class="diario-section carta-box">
+        <h2>Carta para o meu eu do futuro</h2>
+        <p class="lede">Escreva algo que você quer lembrar daqui a alguns anos — sobre quem você é hoje, no meio dessa jornada.</p>
+        <textarea id="cartaTexto" placeholder="Querido eu do futuro..."></textarea>
+        <span class="save-status" id="statusCarta">Salvo ✓</span>
+      </section>
+
+      <section class="diario-section final-cta">
+        <h2 style="color:#fff;">Minha Jornada RAÍZES</h2>
+        <p>Depois de completar os sete encontros, baixe o PDF que reúne tudo o que você viveu nessa jornada — pra guardar pra sempre.</p>
+        <button class="btn btn-primary" id="btnBaixarJornada" style="background:#fff; color:var(--color-root);">Baixar Minha Jornada RAÍZES (PDF)</button>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="assets/js/encontros-data.js"></script>
+  <script src="assets/js/progresso.js"></script>
+  <script src="assets/js/diario.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="assets/js/pdf-data.js"></script>
+  <script src="assets/js/gerar-jornada-pdf.js"></script>
+  <script>
+    const estado = Diario.carregar();
+
+    // Monta os cards de cada encontro dinamicamente
+    const wrap = document.getElementById("encontrosWrap");
+    wrap.innerHTML = ENCONTROS.map(item => {
+      const dados = estado.encontros[item.id] || {};
+      return `
+        <div class="encontro-card">
+          <h3>${item.id}. ${item.titulo}</h3>
+          <label for="deusFalou-${item.id}">O que Deus falou comigo</label>
+          <textarea id="deusFalou-${item.id}" data-encontro="${item.id}" data-campo="deusFalou" placeholder="Escreva aqui...">${dados.deusFalou || ""}</textarea>
+          <label for="versiculo-${item.id}">Versículo marcante</label>
+          <input type="text" id="versiculo-${item.id}" data-encontro="${item.id}" data-campo="versiculo" placeholder="Ex: João 15:5" value="${dados.versiculo || ""}">
+          <span class="save-status" data-status-for="${item.id}">Salvo ✓</span>
+        </div>`;
+    }).join("");
+
+    function mostrarSalvo(elemento) {
+      elemento.classList.add("is-visible");
+      clearTimeout(elemento._timeout);
+      elemento._timeout = setTimeout(() => elemento.classList.remove("is-visible"), 1500);
+    }
+
+    wrap.querySelectorAll("textarea, input").forEach(campo => {
+      campo.addEventListener("blur", () => {
+        const id = campo.dataset.encontro;
+        const nomeCampo = campo.dataset.campo;
+        Diario.salvarEncontro(id, { [nomeCampo]: campo.value });
+        mostrarSalvo(wrap.querySelector(`[data-status-for="${id}"]`));
+      });
+    });
+
+    // Listas dinâmicas (pedidos, respostas, decisões)
+    function montarLista(nomeLista, idLista) {
+      const estadoAtual = Diario.carregar();
+      const alvo = document.getElementById(idLista);
+      const itens = estadoAtual[nomeLista];
+      alvo.innerHTML = itens.length
+        ? itens.map((texto, i) => `<li><span>${texto}</span><button data-remover="${i}">✕</button></li>`).join("")
+        : `<li class="empty-hint" style="border:none; background:none; padding:0;">Nada por aqui ainda.</li>`;
+      alvo.querySelectorAll("[data-remover]").forEach(btn => {
+        btn.addEventListener("click", () => {
+          Diario.removerItem(nomeLista, Number(btn.dataset.remover));
+          montarLista(nomeLista, idLista);
+        });
+      });
+    }
+
+    function ligarAdicao(nomeLista, idInput, idBotao, idLista) {
+      const input = document.getElementById(idInput);
+      const botao = document.getElementById(idBotao);
+      const acao = () => {
+        Diario.adicionarItem(nomeLista, input.value);
+        input.value = "";
+        montarLista(nomeLista, idLista);
+      };
+      botao.addEventListener("click", acao);
+      input.addEventListener("keydown", (e) => { if (e.key === "Enter") acao(); });
+    }
+
+    montarLista("pedidos", "listaPedidos");
+    montarLista("respostas", "listaRespostas");
+    montarLista("decisoes", "listaDecisoes");
+    ligarAdicao("pedidos", "inputPedido", "btnAddPedido", "listaPedidos");
+    ligarAdicao("respostas", "inputResposta", "btnAddResposta", "listaRespostas");
+    ligarAdicao("decisoes", "inputDecisao", "btnAddDecisao", "listaDecisoes");
+
+    // Carta para o eu do futuro
+    const cartaTexto = document.getElementById("cartaTexto");
+    cartaTexto.value = estado.carta || "";
+    cartaTexto.addEventListener("blur", () => {
+      Diario.salvarCarta(cartaTexto.value);
+      mostrarSalvo(document.getElementById("statusCarta"));
+    });
+
+    // Gerar o PDF final
+    document.getElementById("btnBaixarJornada").addEventListener("click", () => {
+      JornadaPDF.gerar();
+    });
+  </script>
+</body>
+</html>

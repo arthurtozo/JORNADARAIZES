@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projeto Final — Minha Jornada com Cristo · RAÍZES</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<style>
+  .pf-header {
+    background: var(--color-root); color: #fff;
+    padding: var(--space-8) var(--space-5) var(--space-7);
+    text-align: center;
+  }
+  .pf-header .eyebrow { color: var(--color-gold-soft); justify-content: center; display: flex; }
+  .pf-header h1 { color: #fff; margin-top: var(--space-3); }
+  .pf-header p { color: rgba(255,255,255,0.85); max-width: 600px; margin: 0 auto; }
+  .pf-header .meta { margin-top: var(--space-5); display: flex; gap: var(--space-3); justify-content: center; flex-wrap: wrap; }
+
+  main { padding: var(--space-8) 0; }
+  main .container { max-width: var(--content-width-wide); }
+
+  .pf-section { margin-bottom: var(--space-9); }
+  .pf-section h2 { margin-bottom: var(--space-2); }
+  .pf-section .lede { margin-bottom: var(--space-6); }
+
+  .question-card {
+    background: var(--color-surface); border-radius: var(--radius-l);
+    padding: var(--space-5) var(--space-6); margin-bottom: var(--space-4);
+  }
+  .question-card label {
+    display: block; font-weight: 600; color: var(--color-root); margin-bottom: var(--space-3);
+  }
+  .question-card textarea {
+    width: 100%; min-height: 70px; border: 1px solid var(--color-line-strong); border-radius: var(--radius-s);
+    padding: var(--space-3) var(--space-4); font-family: var(--font-body); font-size: var(--fs-body);
+    background: #fff; resize: vertical;
+  }
+  .save-status { font-size: var(--fs-caption); color: var(--color-root-light); font-family: var(--font-mono); opacity: 0; transition: opacity var(--dur-med); display:block; margin-top: var(--space-2); }
+  .save-status.is-visible { opacity: 1; }
+
+  .criteria-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-4); }
+  .criteria-card { background: #fff; border: 1px solid var(--color-line); border-radius: var(--radius-m); padding: var(--space-5); }
+  .criteria-card .n { font-family: var(--font-mono); color: var(--color-gold); font-size: var(--fs-caption); }
+  .criteria-card h4 { margin: var(--space-2) 0; color: var(--color-root); font-size: var(--fs-title); }
+
+  table.rubrica { width: 100%; border-collapse: collapse; font-size: var(--fs-small); }
+  table.rubrica th, table.rubrica td { border: 1px solid var(--color-line); padding: var(--space-3); text-align: left; vertical-align: top; }
+  table.rubrica th { background: var(--color-surface); color: var(--color-root); font-family: var(--font-mono); text-transform: uppercase; font-size: var(--fs-caption); letter-spacing: .04em; }
+
+  .cronograma-list { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--space-3); }
+  .cronograma-list li { display: flex; gap: var(--space-4); align-items: baseline; padding: var(--space-3) var(--space-4); background: var(--color-surface); border-radius: var(--radius-s); }
+  .cronograma-list .tempo { font-family: var(--font-mono); color: var(--color-gold); font-size: var(--fs-small); min-width: 90px; }
+
+  .prep-livre textarea { width: 100%; min-height: 160px; border: 1px solid var(--color-line-strong); border-radius: var(--radius-m); padding: var(--space-4); font-family: var(--font-body); font-size: var(--fs-body); resize: vertical; }
+</style>
+</head>
+<body>
+
+  <header class="pf-header">
+    <span class="eyebrow">Projeto final</span>
+    <h1>Minha Jornada com Cristo</h1>
+    <p>Uma apresentação de 5 a 10 minutos contando, com suas próprias palavras, o que mudou em você ao longo dos sete encontros da Jornada RAÍZES.</p>
+    <div class="meta">
+      <span class="badge">5 a 10 minutos</span>
+      <span class="badge">Apresentação individual</span>
+      <span class="badge">Sem decorar — fale do coração</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <section class="pf-section">
+        <h2>Perguntas de preparação</h2>
+        <p class="lede">Não precisa responder tudo de uma vez — volte aqui quantas vezes quiser. Suas respostas ficam salvas neste navegador e são a base da sua apresentação.</p>
+        <div id="perguntasWrap"></div>
+      </section>
+
+      <section class="pf-section">
+        <h2>Critérios de avaliação</h2>
+        <p class="lede">Não é uma prova — é um convite para contar sua história com sinceridade.</p>
+        <div class="criteria-grid">
+          <div class="criteria-card"><span class="n">01</span><h4>Sinceridade</h4><p>A apresentação reflete o que você realmente viveu, não o que "soa bem".</p></div>
+          <div class="criteria-card"><span class="n">02</span><h4>Conexão bíblica</h4><p>Você consegue conectar sua história com pelo menos um dos versículos da jornada.</p></div>
+          <div class="criteria-card"><span class="n">03</span><h4>Clareza</h4><p>Dá pra entender sua história, mesmo sem ter participado dos encontros.</p></div>
+          <div class="criteria-card"><span class="n">04</span><h4>Aplicação prática</h4><p>Você mostra pelo menos uma mudança concreta, não só uma ideia.</p></div>
+        </div>
+      </section>
+
+      <section class="pf-section">
+        <h2>Cronograma</h2>
+        <p class="lede">O líder vai combinar as datas específicas com o grupo — este é o roteiro geral do dia da apresentação.</p>
+        <ul class="cronograma-list">
+          <li><span class="tempo">Abertura</span><span>Oração e explicação rápida de como vai funcionar o dia</span></li>
+          <li><span class="tempo">5–10 min</span><span>cada apresentação individual, na ordem combinada com o líder</span></li>
+          <li><span class="tempo">Entre apresentações</span><span>um momento breve de silêncio ou aplauso — sem comentários avaliativos em público</span></li>
+          <li><span class="tempo">Encerramento</span><span>oração final e entrega do certificado/lembrança da jornada</span></li>
+        </ul>
+      </section>
+
+      <section class="pf-section">
+        <h2>Rubrica</h2>
+        <table class="rubrica">
+          <thead>
+            <tr><th>Critério</th><th>Em construção</th><th>Bom</th><th>Muito bom</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sinceridade</td>
+              <td>Respostas genéricas, pouco pessoais</td>
+              <td>Compartilha experiências reais</td>
+              <td>Vulnerabilidade genuína, fala do coração</td>
+            </tr>
+            <tr>
+              <td>Conexão bíblica</td>
+              <td>Não cita nenhum versículo</td>
+              <td>Cita um versículo da jornada</td>
+              <td>Conecta versículo(s) com sua própria história</td>
+            </tr>
+            <tr>
+              <td>Clareza</td>
+              <td>Difícil de acompanhar</td>
+              <td>Dá pra entender a ideia geral</td>
+              <td>Narrativa clara, do início ao fim</td>
+            </tr>
+            <tr>
+              <td>Aplicação prática</td>
+              <td>Só fala de ideias/sentimentos</td>
+              <td>Cita uma mudança concreta</td>
+              <td>Mostra mudança concreta + próximo passo</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="pf-section prep-livre">
+        <h2>Espaço de preparação livre</h2>
+        <p class="lede">Rascunhe aqui sua apresentação, na ordem que quiser contar.</p>
+        <textarea id="prepLivre" placeholder="Comece escrevendo como você era antes da Jornada RAÍZES..."></textarea>
+        <span class="save-status" id="statusPrep">Salvo ✓</span>
+      </section>
+
+    </div>
+  </main>
+
+  <script>
+    const CHAVE = "raizes:projetofinal";
+    function carregar() {
+      try { return JSON.parse(localStorage.getItem(CHAVE)) || {}; }
+      catch { return {}; }
+    }
+    function salvar(dados) {
+      const atual = carregar();
+      localStorage.setItem(CHAVE, JSON.stringify({ ...atual, ...dados }));
+    }
+
+    const PERGUNTAS = [
+      { id: "antes", texto: "Quem era Jesus para mim antes?" },
+      { id: "hoje", texto: "Quem Jesus é para mim hoje?" },
+      { id: "encontro", texto: "Qual encontro mais falou comigo? Por quê?" },
+      { id: "mudou", texto: "O que Deus mudou em mim ao longo dessa jornada?" },
+      { id: "habito", texto: "Qual hábito espiritual eu quero manter depois da jornada?" },
+      { id: "lembrado", texto: "Como eu quero ser lembrado daqui a dez anos?" },
+      { id: "luta", texto: "Qual luta eu continuo enfrentando, com honestidade?" },
+      { id: "influenciar", texto: "Como eu posso influenciar outras pessoas a partir de agora?" },
+    ];
+
+    const estado = carregar();
+    const wrap = document.getElementById("perguntasWrap");
+    wrap.innerHTML = PERGUNTAS.map(p => `
+      <div class="question-card">
+        <label for="p-${p.id}">${p.texto}</label>
+        <textarea id="p-${p.id}" data-id="${p.id}" placeholder="Escreva aqui...">${estado[p.id] || ""}</textarea>
+        <span class="save-status" data-status-for="${p.id}">Salvo ✓</span>
+      </div>
+    `).join("");
+
+    function mostrarSalvo(el) {
+      if (!el) return;
+      el.classList.add("is-visible");
+      clearTimeout(el._t);
+      el._t = setTimeout(() => el.classList.remove("is-visible"), 1500);
+    }
+
+    wrap.querySelectorAll("textarea").forEach(t => {
+      t.addEventListener("blur", () => {
+        salvar({ [t.dataset.id]: t.value });
+        mostrarSalvo(wrap.querySelector(`[data-status-for="${t.dataset.id}"]`));
+      });
+    });
+
+    const prepLivre = document.getElementById("prepLivre");
+    prepLivre.value = estado.prepLivre || "";
+    prepLivre.addEventListener("blur", () => {
+      salvar({ prepLivre: prepLivre.value });
+      mostrarSalvo(document.getElementById("statusPrep"));
+    });
+  </script>
+</body>
+</html>
