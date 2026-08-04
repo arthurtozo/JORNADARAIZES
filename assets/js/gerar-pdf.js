@@ -544,30 +544,11 @@ const CadernoPDF = (() => {
   // ---------------------------------------------------------------------
 
   function gerar(numeroEncontro) {
-    const dados = CADERNOS[numeroEncontro];
-    if (!dados || typeof window.jspdf === "undefined") {
-      console.error("RAÍZES: dados do caderno ou biblioteca jsPDF indisponíveis.");
-      return;
-    }
-    const { jsPDF } = window.jspdf;
-    const doc = new jsPDF({ unit: "mm", format: "a4" });
-
-    paginaCapa(doc, numeroEncontro, dados);
-    paginaCoracaoHoje(doc, numeroEncontro, dados);
-    paginaVamosAprender(doc, numeroEncontro, dados);
-    paginaEstudo(doc, numeroEncontro, dados);
-    paginaContextoBiblico(doc, numeroEncontro, dados);
-    paginaAplicacao(doc, numeroEncontro, dados);
-    paginaPareEPense(doc, numeroEncontro, dados);
-    paginaConversaFamilia(doc, numeroEncontro, dados);
-    paginaDesafio(doc, numeroEncontro, dados);
-    paginasPlanoDevocional(doc, numeroEncontro, dados);
-    paginaDiario(doc, numeroEncontro, dados);
-    paginaChecklist(doc, numeroEncontro, dados);
-    paginaMinhaOracao(doc, numeroEncontro, dados);
-    paginaProximaEtapa(doc, numeroEncontro, dados);
-
-    doc.save(`Caderno-RAIZES-Encontro-${numeroEncontro}.pdf`);
+    const filename = `encontro-${String(numeroEncontro).padStart(2, '0')}.pdf`;
+    const link = document.createElement('a');
+    link.href = `assets/pdfs/${filename}`;
+    link.download = filename;
+    link.click();
   }
 
   return { gerar };
